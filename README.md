@@ -1,5 +1,5 @@
-# galaxyvim
-Is a neovim(vim 8) setup like spacemacs and based on spacevim
+# VimGalaxy
+Is a neovim and vim 8 setup like spacemacs and based on spacevim
 
 ![Version 0.1.0](https://img.shields.io/badge/version-0.1.0--dev-yellow.svg?style=flat-square)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
@@ -11,6 +11,7 @@ Is a neovim(vim 8) setup like spacemacs and based on spacevim
     - [Linux/Mac](#linuxmac)
     - Windows support
 - [File Structure](#file-structure)
+- [Basics](#basic)
 - Features
     - [Language specific mode](#language-specific-mode)
         - [javascript support](#javascript-support)
@@ -34,12 +35,13 @@ Is a neovim(vim 8) setup like spacemacs and based on spacevim
 
 [VimGalaxy](https://github.com/linkux-it/vimgalaxy) is a Modular configuration for developers, a bundle of custom settings and plugins 
 for Vim/Neovim, here we call them layers, each layer has different plugins and config, users just need to select the layers they need. 
-It got inspired by [spacemacs](https://github.com/syl20bnr/spacemacs) and [SpaceVim](https://spacevim.org).
+It got inspired by [spacemacs] and [SpaceVim](https://spacevim.org).
 
 If you encounter any bugs or have feature requests, just open an issue
 report on Github.
 
 For learning about Vim in general, read [vim-galore](https://github.com/mhinz/vim-galore).
+[![Throughput Graph](https://graphs.waffle.io/linkux-it/vimgalaxy/throughput.svg)](https://waffle.io/linkux-it/vimgalaxy/metrics/throughput)
 
 #### Install
 
@@ -80,6 +82,9 @@ Installation of neovim/vim with python support:
 - [init.vim](./init.vim) - Sources `config/main.vim`
 - [vimrc](./vimrc) - Sources `config/main.vim`
 
+#### Basics
+<leader> is set to <space> all commands will fall into that same as [spacemacs].
+
 ###### javascript support
 
 ###### python support
@@ -102,6 +107,7 @@ TODO:
 Name           | Description
 -------------- | ----------------------
 [dein.vim] | Dark powered Vim/Neovim plugin manager
+[vim-startify] | Vim Startify
 
 #### Credits & Thanks
 - [![GitHub contributors](https://img.shields.io/github/contributors/linkux-it/VimGalaxy.svg)](https://github.com/linkux-it/VimGalaxy/graphs/contributors)
@@ -110,4 +116,6 @@ Name           | Description
 
 
 <!-- plublic links -->
+[spacemacs]: https://github.com/syl20bnr/spacemacs
 [dein.vim]: https://github.com/Shougo/dein.vim
+[vim-startify]: https://github.com/mhinz/vim-startify
