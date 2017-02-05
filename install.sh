@@ -100,13 +100,13 @@ uninstall_neovim () {
 usage () {
     echo "VimGalaxy install script : V 0.1.0-dev"
     echo "    Install VimGalaxy for vim and neovim"
-    echo "        curl -sLf https://raw.githubusercontent.com/SpaceVim/SpaceVim/dev/install.sh | bash"
+    echo "        curl -sLf https://raw.githubusercontent.com/linkux-it/vimgalaxy/master/install.sh | bash"
     echo "    Install VimGalaxy for vim only or neovim only"
-    echo "        curl -sLf https://raw.githubusercontent.com/SpaceVim/SpaceVim/dev/install.sh | bash -s -- install vim"
+    echo "        curl -sLf https://raw.githubusercontent.com/linkux-it/vimgalaxy/master/install.sh | bash -s -- install vim"
     echo "        or"
-    echo "        curl -sLf https://raw.githubusercontent.com/SpaceVim/SpaceVim/dev/install.sh | bash -s -- install neovim"
+    echo "        curl -sLf https://raw.githubusercontent.com/linkux-it/vimgalaxy/master/install.sh | bash -s -- install neovim"
     echo "    Uninstall VimGalaxy"
-    echo "        curl -sLf https://raw.githubusercontent.com/SpaceVim/SpaceVim/dev/install.sh | bash -s -- uninstall"
+    echo "        curl -sLf https://raw.githubusercontent.com/linkux-it/vimgalaxy/master/install.sh | bash -s -- uninstall"
 }
 
 
