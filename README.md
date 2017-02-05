@@ -37,8 +37,11 @@ Is a neovim and vim 8 setup like spacemacs and based on spacevim
 for Vim/Neovim, here we call them layers, each layer has different plugins and config, users just need to select the layers they need. 
 It got inspired by [spacemacs] and [SpaceVim](https://spacevim.org).
 
-If you encounter any bugs or have feature requests, just open an issue
-report on Github.
+If is focused on:
+* Be as small as possible
+* Be simple
+
+If you encounter any bugs or have feature requests, just open an issue report on Github.
 
 For learning about Vim in general, read [vim-galore](https://github.com/mhinz/vim-galore).
 [![Throughput Graph](https://graphs.waffle.io/linkux-it/vimgalaxy/throughput.svg)](https://waffle.io/linkux-it/vimgalaxy/metrics/throughput)
