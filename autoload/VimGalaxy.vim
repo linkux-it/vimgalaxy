@@ -36,12 +36,12 @@ endfunction
 
 
 function! VimGalaxy#end() abort
-    ""
-    " generate tags for VimGalaxy
-    let help = fnamemodify(g:Config_Main_Home, ':p:h:h') . '/doc'
-    exe 'helptags ' . help
-
-    call VimGalaxy#plugins#load()
+    " ""
+    " " generate tags for VimGalaxy
+    " let help = fnamemodify(g:Config_Main_Home, ':p:h:h') . '/doc'
+    " exe 'helptags ' . help
+    "
+    " call VimGalaxy#plugins#load()
 endfunction
 
 
