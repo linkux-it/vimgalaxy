@@ -1,0 +1,63 @@
+function! VimGalaxy#layers#edit#plugins() abort
+  let plugins = [
+    \ ['tpope/vim-surround'],
+    \ ['tpope/vim-unimpaired'],
+    \ ['tpope/vim-endwise'],
+    \ ['tpope/vim-obsession'],
+    \ ['tpope/vim-abolish'],
+    \ ['tpope/vim-repeat'],
+    \ ['haya14busa/incsearch-fuzzy.vim'],
+    \ ['haya14busa/incsearch-easymotion.vim'],
+    \ ['terryma/vim-multiple-cursors'],
+    \ ['haya14busa/incsearch.vim'],
+    \ ['mattn/emmet-vim', { 'on_cmd' : 'EmmetInstall', 'on_ft': ['htmldjango','jsx','swig','html','xml','xsl','xslt','xsd','css','sass','scss','less','mustache','handlebars','hbs'] }],
+    \ ['easymotion/vim-easymotion'],
+    \ ['editorconfig/editorconfig-vim', { 'on_cmd' : 'EditorConfigReload', 'on_i': 1}],
+    \ ]
+
+  return plugins
+endfunction
+
+
+function! VimGalaxy#layers#edit#config() abort
+  let g:multi_cursor_next_key='<C-j>'
+  let g:multi_cursor_prev_key='<C-k>'
+  let g:multi_cursor_skip_key='<C-x>'
+  let g:multi_cursor_quit_key='<Esc>'
+  let g:user_emmet_settings = {'html':{'quote_char': "'",},}
+
+  map <leader>l <Plug>(easymotion-lineforward)
+  map <leader>j <Plug>(easymotion-j)
+  map <leader>k <Plug>(easymotion-k)
+  map <leader>h <Plug>(easymotion-linebackward)
+
+  let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+  let g:EasyMotion_smartcase = 1
+  let g:EasyMotion_use_smartsign_us = 1 " US layout
+
+  let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+  let g:EditorConfig_exclude_patterns = ['scp://.*']
+  let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
+  let g:incsearch#magic = '\v' " very magic
+  let g:incsearch#magic = '\V' " very nomagic
+  let g:incsearch#magic = '\m' " magic
+  let g:incsearch#magic = '\M' " nomagic
+
+  map / <Plug>(incsearch-easymotion-/)
+  map ? <Plug>(incsearch-easymotion-?)
+  map g/ <Plug>(incsearch-easymotion-stay)
+
+  " incsearch.vim x fuzzy x vim-easymotion
+  function! s:config_easyfuzzymotion(...) abort
+  return extend(copy({
+        \   'converters': [incsearch#config#fuzzy#converter()],
+        \   'modules': [incsearch#config#easymotion#module()],
+        \   'keymap': {"\<CR>": '<Over>(easymotion)'},
+        \   'is_expr': 0,
+        \   'is_stay': 1
+        \ }), get(a:, 1, {}))
+  endfunction
+
+  noremap <silent><expr> <leader>/ incsearch#go(<SID>config_easyfuzzymotion())
+endfunction

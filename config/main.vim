@@ -13,14 +13,12 @@ call VimGalaxy#default()
 call VimGalaxy#loadCustomConfig()
 call VimGalaxy#end()
 
-" call zvim#util#source_rc('general.vim')
-"
+call zvim#utils#source_rc('general.vim')
 " call SpaceVim#autocmds#init()
-"
-" if has('nvim')
-"     call zvim#util#source_rc('neovim.vim')
-" endif
-"
-" call zvim#util#source_rc('commands.vim')
+
+if has('nvim')
+  call zvim#utils#source_rc('neovim.vim')
+endif
+
+" call zvim#utils#source_rc('commands.vim')
 " filetype plugin indent on
-" syntax on
