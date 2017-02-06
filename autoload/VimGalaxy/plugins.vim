@@ -18,7 +18,7 @@ let s:dein_path = join([s:package_manager_directory, 'repos', 'github.com',
 function! VimGalaxy#plugins#load() abort
   call s:install_manager()
   
-  " if dein#load_state(s:package_manager_directory)
+  "if dein#load_state(s:package_manager_directory)
     call dein#begin(s:package_manager_directory)
   
     call dein#add(s:dein_path)
@@ -28,7 +28,7 @@ function! VimGalaxy#plugins#load() abort
     call dein#end()
     call dein#save_state()
     call dein#call_hook('source')
-  " endif
+  "endif
 endfunction
 
 

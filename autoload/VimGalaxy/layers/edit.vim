@@ -1,19 +1,26 @@
 function! VimGalaxy#layers#edit#plugins() abort
   let plugins = [
-    \ ['tpope/vim-surround'],
-    \ ['tpope/vim-unimpaired'],
-    \ ['tpope/vim-endwise'],
-    \ ['tpope/vim-obsession'],
-    \ ['tpope/vim-abolish'],
-    \ ['tpope/vim-repeat'],
-    \ ['haya14busa/incsearch-fuzzy.vim'],
-    \ ['haya14busa/incsearch-easymotion.vim'],
-    \ ['terryma/vim-multiple-cursors'],
-    \ ['haya14busa/incsearch.vim'],
-    \ ['mattn/emmet-vim', { 'on_cmd' : 'EmmetInstall', 'on_ft': ['htmldjango','jsx','swig','html','xml','xsl','xslt','xsd','css','sass','scss','less','mustache','handlebars','hbs'] }],
-    \ ['easymotion/vim-easymotion'],
-    \ ['editorconfig/editorconfig-vim', { 'on_cmd' : 'EditorConfigReload', 'on_i': 1}],
-    \ ]
+        \ ['tpope/vim-surround'],
+        \ ['tpope/vim-unimpaired'],
+        \ ['tpope/vim-endwise'],
+        \ ['tpope/vim-obsession'],
+        \ ['tpope/vim-abolish'],
+        \ ['tpope/vim-repeat'],
+        \ ['tomtom/tcomment_vim'],
+        \ ['gilsondev/searchtasks.vim'],
+        \ ['haya14busa/incsearch-fuzzy.vim'],
+        \ ['haya14busa/incsearch-easymotion.vim'],
+        \ ['terryma/vim-multiple-cursors'],
+        \ ['haya14busa/incsearch.vim'],
+        \ ['haya14busa/vim-asterisk'],
+        \ ['brooth/far.vim'],
+        \ ['chrisbra/NrrwRgn'],
+        \ ['terryma/vim-expand-region'],
+        \ ['godlygeek/tabular', { 'on_cmd': 'Tabularize'}],
+        \ ['mattn/emmet-vim', { 'on_cmd' : 'EmmetInstall', 'on_ft': ['htmldjango','jsx','swig','html','xml','xsl','xslt','xsd','css','sass','scss','less','mustache','handlebars','hbs'] }],
+        \ ['easymotion/vim-easymotion'],
+        \ ['editorconfig/editorconfig-vim', { 'on_cmd' : 'EditorConfigReload', 'on_i': 1}],
+  \ ]
 
   return plugins
 endfunction
@@ -50,14 +57,41 @@ function! VimGalaxy#layers#edit#config() abort
 
   " incsearch.vim x fuzzy x vim-easymotion
   function! s:config_easyfuzzymotion(...) abort
-  return extend(copy({
-        \   'converters': [incsearch#config#fuzzy#converter()],
-        \   'modules': [incsearch#config#easymotion#module()],
-        \   'keymap': {"\<CR>": '<Over>(easymotion)'},
-        \   'is_expr': 0,
-        \   'is_stay': 1
-        \ }), get(a:, 1, {}))
+    return extend(copy({
+          \   'converters': [incsearch#config#fuzzy#converter()],
+          \   'modules': [incsearch#config#easymotion#module()],
+          \   'keymap': {"\<CR>": '<Over>(easymotion)'},
+          \   'is_expr': 0,
+          \   'is_stay': 1
+          \ }), get(a:, 1, {}))
   endfunction
 
   noremap <silent><expr> <leader>/ incsearch#go(<SID>config_easyfuzzymotion())
+
+  nmap <Leader>a& :Tabularize /&<CR>
+  vmap <Leader>a& :Tabularize /&<CR>
+  nmap <Leader>a= :Tabularize /=<CR>
+  vmap <Leader>a= :Tabularize /=<CR>
+  nmap <Leader>a: :Tabularize /:<CR>
+  vmap <Leader>a: :Tabularize /:<CR>
+  nmap <Leader>a:: :Tabularize /:\zs<CR>
+  vmap <Leader>a:: :Tabularize /:\zs<CR>
+  nmap <Leader>a, :Tabularize /,<CR>
+  vmap <Leader>a, :Tabularize /,<CR>
+  nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+  vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+
+  let g:searchtasks_list=["TODO", "FIXME", "NOTE", "CHANGED", "TEST"]
+  let g:far#source = 'agnvim'
+
+  map *   <Plug>(incsearch-nohl)<Plug>(asterisk-*)
+  map g*  <Plug>(incsearch-nohl)<Plug>(asterisk-g*)
+  map #   <Plug>(incsearch-nohl)<Plug>(asterisk-#)
+  map g#  <Plug>(incsearch-nohl)<Plug>(asterisk-g#)
+  
+  map z*  <Plug>(incsearch-nohl0)<Plug>(asterisk-z*)
+  map gz* <Plug>(incsearch-nohl0)<Plug>(asterisk-gz*)
+  map z#  <Plug>(incsearch-nohl0)<Plug>(asterisk-z#)
+  map gz# <Plug>(incsearch-nohl0)<Plug>(asterisk-gz#)
+  let g:asterisk#keeppos = 1
 endfunction

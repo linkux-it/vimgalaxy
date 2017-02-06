@@ -69,13 +69,59 @@ function! VimGalaxy#default#SetOptions() abort
 
   let base16colorspace=256
 
+  cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+  " Remember last position
+  if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+  endif
+
+  " Required:
+  " Enable filetype plugins
+  filetype plugin indent on
+
+  " This the default one
+  set foldmethod=syntax nofoldenable
+  autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+  autocmd BufNewFile,BufReadPost *.py setl foldmethod=indent nofoldenable
+
+  " This to close preview when insert mode leaves
+  autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+  " Open quickfix when set
+  autocmd QuickFixCmdPost [^l]* cwindow
+  autocmd QuickFixCmdPost l*    lwindow
+
+  " Next three lines are to enable C-Space to autocomplete, omnicomplete
+  inoremap <C-Space> <C-x><C-o>
+  inoremap <C-@> <c-x><c-o>
+
+  if exists('$TMUX')
+    " Easy navigation same as tmux, enjoy it!
+    let g:tmux_navigator_no_mappings = 1
+
+    nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+    nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+    nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+    nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+    nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
+
+    let g:tmux_navigator_save_on_switch = 1
+  else
+    nnoremap <C-h> <C-w>h
+    nnoremap <C-j> <C-w>j
+    nnoremap <C-k> <C-w>k
+    nnoremap <C-l> <C-w>l
+  endif
+
+  if !has('nvim')
+    set term=screen-256color
+  endif
+
   "    " indent use backspace delete indent, eol use backspace delete line at
   "    " begining start delete the char you just typed in if you do not use set
   "    " nocompatible ,you need this
   "    set backspace=indent,eol,start
-  "
-  "    " hide cmd
-  "    set noshowcmd
   "
   "
   "    " do not break words.
@@ -126,62 +172,20 @@ function! VimGalaxy#default#SetOptions() abort
 endfunction
 
 function! VimGalaxy#default#SetPlugins() abort
+  call add(g:vimgalaxy_plugin_groups, 'core')
   call add(g:vimgalaxy_plugin_groups, 'ui')
   call add(g:vimgalaxy_plugin_groups, 'edit')
   call add(g:vimgalaxy_plugin_groups, 'colorscheme')
+  call add(g:vimgalaxy_plugin_groups, 'git')
+  call add(g:vimgalaxy_plugin_groups, 'checkers')
+  call add(g:vimgalaxy_plugin_groups, 'autocomplete')
+  call add(g:vimgalaxy_plugin_groups, 'shell')
+  call add(g:vimgalaxy_plugin_groups, 'format')
+  call add(g:vimgalaxy_plugin_groups, 'web')
+  call add(g:vimgalaxy_plugin_groups, 'graphql')
 
   call add(g:vimgalaxy_plugin_groups, 'lang#javascript')
   call add(g:vimgalaxy_plugin_groups, 'lang#python')
-
-
-  call add(g:vimgalaxy_plugin_groups, 'denite')
-  call add(g:vimgalaxy_plugin_groups, 'scala')
-  call add(g:vimgalaxy_plugin_groups, 'web')
-  call add(g:vimgalaxy_plugin_groups, 'lang')
-  call add(g:vimgalaxy_plugin_groups, 'tools')
-  call add(g:vimgalaxy_plugin_groups, 'checkers')
-  call add(g:vimgalaxy_plugin_groups, 'format')
-  call add(g:vimgalaxy_plugin_groups, 'chat')
-  call add(g:vimgalaxy_plugin_groups, 'git')
-  call add(g:vimgalaxy_plugin_groups, 'scala')
-  call add(g:vimgalaxy_plugin_groups, 'lang#go')
-  call add(g:vimgalaxy_plugin_groups, 'scm')
-  call add(g:vimgalaxy_plugin_groups, 'editing')
-  call add(g:vimgalaxy_plugin_groups, 'indents')
-  call add(g:vimgalaxy_plugin_groups, 'navigation')
-  call add(g:vimgalaxy_plugin_groups, 'misc')
-  call add(g:vimgalaxy_plugin_groups, 'core')
-  call add(g:vimgalaxy_plugin_groups, 'github')
-
-  call add(g:vimgalaxy_plugin_groups, 'autocomplete')
-
-  if ! has('nvim')
-    call add(g:vimgalaxy_plugin_groups, 'vim')
-  else
-    call add(g:vimgalaxy_plugin_groups, 'nvim')
-  endif
-
-  " if OSX()
-  "     call add(g:vimgalaxy_plugin_groups, 'osx')
-  " endif
-  " if WINDOWS()
-  "     call add(g:vimgalaxy_plugin_groups, 'windows')
-  " endif
-  " if LINUX()
-  "     call add(g:vimgalaxy_plugin_groups, 'linux')
-  " endif
-
-  " This expands current directory related with active buffer
-  cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-
-  " Remember last position
-  if has("autocmd")
-    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-  endif
-
-  " Required:
-  " Enable filetype plugins
-  filetype plugin indent on
 endfunction
 
 
@@ -214,7 +218,6 @@ function! VimGalaxy#default#SetMappings() abort
 
   " Search maps
   nnoremap <leader>s /
-  nnoremap <leader>sa :Ack --
   nnoremap <leader>svg :vimgrep
   nnoremap <leader>sg :grep
 
@@ -223,4 +226,6 @@ function! VimGalaxy#default#SetMappings() abort
   nnoremap <leader>fsa :wa<CR>
   nnoremap <leader>fo :e
 
+  nnoremap <leader>du :call dein#update()<cr>
+  nnoremap <leader>dc :call dein#check_update()<cr>
 endfunction

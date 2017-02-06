@@ -85,7 +85,13 @@ Installation of neovim/vim with python support:
 - [init.vim](./init.vim) - Sources `config/main.vim`
 - [vimrc](./vimrc) - Sources `config/main.vim`
 
+## TODO:
+* Create Denite menu like spacemacs
+* Create ergonomic maps
+
 #### Basics
+Vim 8 has not full support unless plugins has support for it.
+
 <leader> is set to <space> all commands will fall into that same as [spacemacs].
 
 ###### javascript support

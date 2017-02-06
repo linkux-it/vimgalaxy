@@ -5,6 +5,7 @@ function! VimGalaxy#layers#lang#javascript#plugins() abort
       \ ['carlitux/deoplete-ternjs', { 'on_ft' : ['javascript']}],
       \ ['maksimr/vim-jsbeautify', { 'on_ft' : ['javascript']}],
       \ ['flowtype/vim-flow', {'on_ft': ['javascript']}],
+      \ ['othree/javascript-libraries-syntax.vim', { 'on_ft' : ['javascript','coffee','ls','typescript']}],
     \ ]
     return plugins
 endfunction

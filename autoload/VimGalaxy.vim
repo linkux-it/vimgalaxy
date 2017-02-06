@@ -17,7 +17,7 @@
 ""
 " Version of VimGalaxy, this value can not be changed.
 scriptencoding utf-8
-let g:vimgalaxy_version = '0.1.0'
+let g:vimgalaxy_version = '0.0.1'
 lockvar g:vimgalaxy_version
 
 let g:vimgalaxy_dein_installed = 0
