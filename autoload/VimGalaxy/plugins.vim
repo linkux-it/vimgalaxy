@@ -19,24 +19,23 @@ function! VimGalaxy#plugins#load() abort
   call s:install_manager()
   
   "if dein#load_state(s:package_manager_directory)
-    call dein#begin(s:package_manager_directory)
-  
-    call dein#add(s:dein_path)
-    call s:load_plugins()
-    " call s:disable_plugins(g:vimgalaxy_disabled_plugins)
-    
-    call dein#end()
-    call dein#save_state()
-    call dein#call_hook('source')
+  call dein#begin(s:package_manager_directory)
 
-    if g:vimgalaxy_checkinstall == 1
-      silent! let flag = dein#check_install()
-      if flag
-        augroup VimGalaxyCheckInstall
-          au!
-          au VimEnter * call dein#install()
-        augroup END
-      endif
+  call dein#add(s:dein_path)
+  call s:load_plugins()
+  " call s:disable_plugins(g:vimgalaxy_disabled_plugins)
+
+  call dein#end()
+  call dein#save_state()
+  call dein#call_hook('source')
+
+  if g:vimgalaxy_checkinstall == 1
+    silent! let flag = dein#check_install()
+    if flag
+      augroup VimGalaxyCheckInstall
+        au!
+        au VimEnter * call dein#install()
+      augroup END
     endif
   endif
 endfunction
