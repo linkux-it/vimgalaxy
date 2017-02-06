@@ -1,7 +1,7 @@
 # VimGalaxy
 Is a neovim and vim 8 setup like spacemacs and based on spacevim
 
-![Version 0.1.0](https://img.shields.io/badge/version-0.1.0--dev-yellow.svg?style=flat-square)
+![Version 0.0.1](https://img.shields.io/badge/version-0.1.0--dev-yellow.svg?style=flat-square)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Doc](https://img.shields.io/badge/doc-%3Ah%VimGalaxy-orange.svg?style=flat-square)](doc/VimGalaxy.txt)
 
