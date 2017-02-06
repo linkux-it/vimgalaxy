@@ -1,8 +1,8 @@
 ""
 " @section colorscheme, colorscheme
 " @parentsection layers
-" SpaceVim default colorscheme is gruvbox, you can change it by set spacevim
-" option. add this to your `~/.SpaceVim.d/init.vim`
+" VimGalaxy default colorscheme is gruvbox, you can change it by set vimgalaxy
+" option. add this to your `~/.VimGalaxy.d/init.vim`
 " >
 "   let g:vimgalaxy_colorscheme = 'solarized'
 " <

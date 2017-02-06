@@ -6,6 +6,6 @@
 function! VimGalaxy#layers#shell#plugins() abort
   let plugins = [
         \ ['Shougo/deol.nvim']
-        \ ]
+  \ ]
   return plugins
 endfunction

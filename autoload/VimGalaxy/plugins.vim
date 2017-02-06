@@ -23,12 +23,22 @@ function! VimGalaxy#plugins#load() abort
   
     call dein#add(s:dein_path)
     call s:load_plugins()
-    " call s:disable_plugins(g:spacevim_disabled_plugins)
+    " call s:disable_plugins(g:vimgalaxy_disabled_plugins)
     
     call dein#end()
     call dein#save_state()
     call dein#call_hook('source')
-  "endif
+
+    if g:vimgalaxy_checkinstall == 1
+      silent! let flag = dein#check_install()
+      if flag
+        augroup VimGalaxyCheckInstall
+          au!
+          au VimEnter * call dein#install()
+        augroup END
+      endif
+    endif
+  endif
 endfunction
 
 
@@ -87,11 +97,6 @@ function! s:disable_plugins(plugin_list) abort
 endfunction
 
 
-" function! SpaceVim#plugins#get(...) abort
-" 
-" endfunction
-
-
 function! s:defind_hooks(bundle) abort
   let s:source = "call zvim#utils#source_rc('plugins/" . split(g:dein#name,'\.')[0] . ".vim')"
   call dein#config(g:dein#name, { 'hook_source' : s:source })
@@ -103,7 +108,6 @@ function! s:install_manager()
   if !filereadable(join([expand(s:dein_path), 'README.md'], s:Fsep))
     if executable('git')
       exec '!git clone https://github.com/shougo/dein.vim ' . s:dein_path
-      let g:spacevim_dein_installed = 1
     else
       echohl WarningMsg
       echom "You need install git!"

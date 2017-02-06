@@ -4,7 +4,7 @@
 " @library
 " @order intro version dicts functions exceptions layers faq
 "   VimGalaxy is a Modular configuration, a bundle of custom settings
-" and plugins, for Vim/Neovim. It got inspired by spacemacs and spacevim
+" and plugins, for Vim/Neovim. It got inspired by spacemacs and vimgalaxy
 "
 
 ""
@@ -55,6 +55,14 @@ let g:vimgalaxy_colorscheme = 'dracula'
 "   let g:vimgalaxy_colorscheme_default = 'other_color'
 " <
 let g:vimgalaxy_colorscheme_default = 'desert'
+
+""
+" Enable/Disable checkinstall on VimGalaxy startup. by default is 1.
+"
+" To disable it: >
+"   let g:vimgalaxy_checkinstall = 0
+" <
+let g:vimgalaxy_checkinstall = 1
 
 
 function! VimGalaxy#loadCustomConfig() abort

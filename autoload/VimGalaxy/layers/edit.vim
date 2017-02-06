@@ -21,7 +21,6 @@ function! VimGalaxy#layers#edit#plugins() abort
         \ ['easymotion/vim-easymotion'],
         \ ['editorconfig/editorconfig-vim', { 'on_cmd' : 'EditorConfigReload', 'on_i': 1}],
   \ ]
-
   return plugins
 endfunction
 

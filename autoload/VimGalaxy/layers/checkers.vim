@@ -4,11 +4,11 @@
 " VimGalaxy use neomake as default syntax checker.
 
 function! VimGalaxy#layers#checkers#plugins() abort
-	let plugins = [
-				\ ['neomake/neomake', {'merged' : 0, 'loadconf' : 1 , 'loadconf_before' : 1}]
-	\ ]
+  let plugins = [
+        \ ['neomake/neomake']
+  \ ]
 
-	return plugins
+  return plugins
 endfunction
 
 

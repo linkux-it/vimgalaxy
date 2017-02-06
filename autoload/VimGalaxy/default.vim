@@ -7,9 +7,6 @@ function! VimGalaxy#default#SetOptions() abort
   " The encoding written to file.
   set fileencoding=utf-8
 
-  " enable syntax highlighting
-  set syntax=on
-
   " show partial command
   set showcmd
 
@@ -75,10 +72,6 @@ function! VimGalaxy#default#SetOptions() abort
   if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
   endif
-
-  " Required:
-  " Enable filetype plugins
-  filetype plugin indent on
 
   " This the default one
   set foldmethod=syntax nofoldenable
