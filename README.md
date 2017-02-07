@@ -125,6 +125,29 @@ Name           | Description
 Name           | Description
 -------------- | ----------------------
 [vim-startify] | Vim Startify
+[deoplete.nvim] | 
+[dein.vim] | 
+[denite.nvim] | 
+[vim-searchindex] | 
+[indentLine] | 
+[FastFold] | 
+[vim-bufkill] | 
+[vim-gitgutter] | 
+[vim-airline] | 
+[vim-airline-themes] | 
+[vim-startify] | 
+[goyo.vim] | 
+[limelight.vim] | 
+[vim-mundo] | 
+[nerdtree] | 
+[nerdtree-git-plugin] | 
+[denite.nvim] | 
+[neomru.vim] | 
+[neoman.vim] | 
+[ZoomWin] | 
+[vim-relativity] | 
+[vim-togglelist] | 
+[tagbar] | 
 
 
 #### Credits & Thanks
@@ -140,3 +163,23 @@ Name           | Description
 [deoplete.nvim]: https://github.com/Shougo/deoplete.nvim
 [dein.vim]: https://github.com/Shougo/dein.vim
 [denite.nvim]: https://github.com/Shougo/denite.nvim
+[vim-searchindex]: https://github.com/google/vim-searchindex
+[indentLine]: https://github.com/Yggdroot/indentLine
+[FastFold]: https://github.com/Konfekt/FastFold
+[vim-bufkill]: https://github.com/qpkorr/vim-bufkill
+[vim-gitgutter]: https://github.com/airblade/vim-gitgutter
+[vim-airline]: https://github.com/vim-airline/vim-airline
+[vim-airline-themes]: https://github.com/vim-airline/vim-airline-themes
+[vim-startify]: https://github.com/mhinz/vim-startify
+[goyo.vim]: https://github.com/junegunn/goyo.vim
+[limelight.vim]: https://github.com/junegunn/limelight.vim
+[vim-mundo]: https://github.com/simnalamburt/vim-mundo
+[nerdtree]: https://github.com/scrooloose/nerdtree
+[nerdtree-git-plugin]: https://github.com/Xuyuanp/nerdtree-git-plugin
+[denite.nvim]: https://github.com/Shougo/denite.nvim
+[neomru.vim]: https://github.com/Shougo/neomru.vim
+[neoman.vim]: https://github.com/nhooyr/neoman.vim
+[ZoomWin]: https://github.com/vim-scripts/ZoomWin
+[vim-relativity]: https://github.com/kennykaye/vim-relativity
+[vim-togglelist]: https://github.com/milkypostman/vim-togglelist
+[tagbar]: https://github.com/majutsushi/tagbar
