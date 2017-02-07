@@ -5,6 +5,8 @@ Is a neovim and vim 8 setup like spacemacs and based on spacevim
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Doc](https://img.shields.io/badge/doc-%3Ah%VimGalaxy-orange.svg?style=flat-square)](doc/VimGalaxy.txt)
 
+[![Throughput Graph](https://graphs.waffle.io/linkux-it/vimgalaxy/throughput.svg)](https://waffle.io/linkux-it/vimgalaxy/metrics/throughput)
+
 ### Table of Contents
 - [Introduction](#introduction)
 - [Install](#install)
@@ -50,7 +52,6 @@ If is focused on:
 If you encounter any bugs or have feature requests, just open an issue report on Github.
 
 For learning about Vim in general, read [vim-galore](https://github.com/mhinz/vim-galore).
-[![Throughput Graph](https://graphs.waffle.io/linkux-it/vimgalaxy/throughput.svg)](https://waffle.io/linkux-it/vimgalaxy/metrics/throughput)
 
 #### Install
 
