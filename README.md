@@ -30,8 +30,14 @@ Is a neovim and vim 8 setup like spacemacs and based on spacevim
     - Central location for tags
     - Lightweight simple status/tabline
     - Premium color-schemes
+- [Mappings](#mappings)
+- Layers
+    - [Core](#core)
+    - [UI](#ui)
 - [Custom configuration](#custom-configuration)
 - [Credits & Thanks](#credits--thanks)
+
+#### Introduction
 
 [VimGalaxy](https://github.com/linkux-it/vimgalaxy) is a Modular configuration for developers, a bundle of custom settings and plugins 
 for Vim/Neovim, here we call them layers, each layer has different plugins and config, users just need to select the layers they need. 
@@ -71,17 +77,10 @@ Installation of neovim/vim with python support:
 #### File Structure
 - [config](./config)/ - Configuration
   - [plugins](./config/plugins)/ - Plugin configurations
-  - [mappings.vim](./config/mappings.vim) - Key mappings
-  - [autocmds.vim](./config/autocmds.vim) - autocmd group
   - [general.vim](./config/general.vim) - General configuration
   - [init.vim](./config/init.vim) - `runtimepath` initialization
-  - [neovim.vim](./config/neovim.vim) - Neovim specific setup
-  - [plugins.vim](./config/plugins.vim) - Plugin bundles
-  - [commands.vim](./config/commands.vim) - Commands
-  - [functions.vim](./config/functions.vim) - Functions
   - [main.vim](./config/main.vim) - Main config
-- [ftplugin](./ftplugin)/ - Language specific custom settings
-- [filetype.vim](./filetype.vim) - Custom filetype detection
+  - [neovim.vim](./config/neovim.vim) - Neovim specific setup
 - [init.vim](./init.vim) - Sources `config/main.vim`
 - [vimrc](./vimrc) - Sources `config/main.vim`
 
@@ -102,21 +101,30 @@ Vim 8 has not full support unless plugins has support for it.
 
 By default, SpaceVim use these dark powered plugins:
 
-1. [deoplete.nvim](https://github.com/Shougo/deoplete.nvim) - Dark powered asynchronous completion framework for neovim
-2. [dein.vim](https://github.com/Shougo/dein.vim) - Dark powered Vim/Neovim plugin manager
+1. [deoplete.nvim] - Dark powered asynchronous completion framework for neovim
+2. [dein.vim] - Dark powered Vim/Neovim plugin manager
+3. [denite.nvim] - Dark powered asynchronous unite all interfaces for Neovim/Vim8
 
 TODO:
 
 1. [defx.nvim](https://github.com/Shougo/defx.nvim) - Dark powered file explorer
 2. [deoppet.nvim](https://github.com/Shougo/deoppet.nvim) - Dark powered snippet plugin
-3. [denite.nvim](https://github.com/Shougo/denite.nvim) - Dark powered asynchronous unite all interfaces for Neovim/Vim8
 
-#### Non Lazy-Loaded Plugins
+#### Layers
+
+##### Core
 
 Name           | Description
 -------------- | ----------------------
 [dein.vim] | Dark powered Vim/Neovim plugin manager
+
+
+##### UI
+
+Name           | Description
+-------------- | ----------------------
 [vim-startify] | Vim Startify
+
 
 #### Credits & Thanks
 - [![GitHub contributors](https://img.shields.io/github/contributors/linkux-it/VimGalaxy.svg)](https://github.com/linkux-it/VimGalaxy/graphs/contributors)
@@ -128,3 +136,6 @@ Name           | Description
 [spacemacs]: https://github.com/syl20bnr/spacemacs
 [dein.vim]: https://github.com/Shougo/dein.vim
 [vim-startify]: https://github.com/mhinz/vim-startify
+[deoplete.nvim]: https://github.com/Shougo/deoplete.nvim
+[dein.vim]: https://github.com/Shougo/dein.vim
+[denite.nvim]: https://github.com/Shougo/denite.nvim

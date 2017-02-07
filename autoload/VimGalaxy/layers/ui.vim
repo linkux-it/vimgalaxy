@@ -35,20 +35,38 @@ function! VimGalaxy#layers#ui#config() abort
   nmap <silent><leader>fbf :NERDTreeFind<CR>
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-  nnoremap <silent> [denite]T :Denite -auto-resize colorscheme<cr>
-  " TODO: change denite fire
   nmap <leader> [denite]
-  nnoremap [denite] <nop>
-  nnoremap <silent> [denite]fr :Denite -auto-resize file_rec<cr>
-  nnoremap <silent> [denite]g :Denite -auto-resize grep<cr>
+  nnoremap <silent> [denite] :Denite -auto-resize menu<cr>
+  nnoremap <silent> [denite]T :Denite -auto-resize colorscheme<cr>
+
+  " file mappings
+  nnoremap <silent> [denite]fl :Denite -auto-resize file_rec<cr>
   nnoremap <silent> [denite]fp :Denite -auto-resize file_filepoint<cr>
-  nnoremap <silent> [denite]b :Denite -auto-resize buffer<cr>
+  nnoremap <silent> [denite]fr :Denite -auto-resize file_mru<cr>
+
+  " file buffer
+  nnoremap <silent> [denite]bl :Denite -auto-resize buffer<cr>
+
+  " TODO: Work on this
+  let s:menus = {}
+
+  let s:menus.b = {'description': '+buffers'}
+  let s:menus.b.command_candidates = []
+
+  let s:menus.w = {'description': '+window'}
+  let s:menus.w.command_candidates = []
+
+  let s:menus.f = {'description': '+file'}
+  let s:menus.f.command_candidates = []
+
+  call denite#custom#var('menu', 'menus', s:menus)
+
+  " TODO: change denite fire
+  nnoremap <silent> [denite]g :Denite -auto-resize grep<cr>
   nnoremap <silent> [denite]h :Denite -auto-resize help<cr>
   nnoremap <silent> [denite]dr :Denite -auto-resize directory_rec<cr>
-  nnoremap <silent> [denite]r :Denite -auto-resize file_mru<cr>
   nnoremap <silent> [denite]t :Denite -auto-resize filetype<cr>
   nnoremap <silent> [denite]l :Denite -auto-resize line<cr>
-  nnoremap <silent> [denite]m :Denite -auto-resize menu<cr>
   nnoremap <silent> [denite]j :Denite -auto-resize jump_point<cr>
   nnoremap <silent> [denite]c :Denite -auto-resize command<cr>
   nnoremap <silent> [denite]o :Denite -auto-resize outline<cr>
