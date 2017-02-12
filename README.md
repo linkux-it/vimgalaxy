@@ -16,8 +16,8 @@ Is a neovim and vim 8 setup like spacemacs and based on spacevim
 - [Basics](#basic)
 - Features
     - [Language specific mode](#language-specific-mode)
-        - [javascript support](#javascript-support)
-        - [python support](#python-support)
+        - [javascript support](#javascript)
+        - [python support](#python)
         - c/c++ support
         - go support
         - rust support
@@ -28,26 +28,26 @@ Is a neovim and vim 8 setup like spacemacs and based on spacevim
     - [Modular configuration](#modular-configuration)
     - Lazy-load 90% of plugins with [dein.vim]
     - Robust, yet light weight
-    - Extensive Neocomplete setup
-    - Central location for tags
-    - Lightweight simple status/tabline
-    - Premium color-schemes
+    - Be as small as possible
+    - Be simple
 - [Mappings](#mappings)
 - Layers
     - [Core](#core)
     - [UI](#ui)
+    - [Autocomplete](#autocomplete)
+    - [Javascript](#javascript)
+    - [Python](#python)
 - [Custom configuration](#custom-configuration)
 - [Credits & Thanks](#credits--thanks)
+
+## TODO:
+* Create Denite menu like spacemacs - maybe another plugin or custom code
 
 #### Introduction
 
 [VimGalaxy](https://github.com/linkux-it/vimgalaxy) is a Modular configuration for developers, a bundle of custom settings and plugins 
 for Vim/Neovim, here we call them layers, each layer has different plugins and config, users just need to select the layers they need. 
 It got inspired by [spacemacs] and [SpaceVim](https://spacevim.org).
-
-If is focused on:
-* Be as small as possible
-* Be simple
 
 If you encounter any bugs or have feature requests, just open an issue report on Github.
 
@@ -85,18 +85,10 @@ Installation of neovim/vim with python support:
 - [init.vim](./init.vim) - Sources `config/main.vim`
 - [vimrc](./vimrc) - Sources `config/main.vim`
 
-## TODO:
-* Create Denite menu like spacemacs
-* Create ergonomic maps
-
 #### Basics
 Vim 8 has not full support unless plugins has support for it.
 
 <leader> is set to <space> all commands will fall into that same as [spacemacs].
-
-###### javascript support
-
-###### python support
 
 ##### Neovim centric - Dark powered mode of SpaceVim.
 
@@ -119,14 +111,12 @@ Name           | Description
 -------------- | ----------------------
 [dein.vim] | Dark powered Vim/Neovim plugin manager
 
-
 ##### UI
 
 Name           | Description
 -------------- | ----------------------
 [vim-startify] | Vim Startify
 [deoplete.nvim] | 
-[dein.vim] | 
 [denite.nvim] | 
 [vim-searchindex] | 
 [indentLine] | 
@@ -149,6 +139,12 @@ Name           | Description
 [vim-togglelist] | 
 [tagbar] | 
 
+##### Autocomplete
+
+Name           | Description
+-------------- | ----------------------
+[vim-startify] | Vim Startify
+
 
 #### Credits & Thanks
 - [![GitHub contributors](https://img.shields.io/github/contributors/linkux-it/VimGalaxy.svg)](https://github.com/linkux-it/VimGalaxy/graphs/contributors)
@@ -161,7 +157,6 @@ Name           | Description
 [dein.vim]: https://github.com/Shougo/dein.vim
 [vim-startify]: https://github.com/mhinz/vim-startify
 [deoplete.nvim]: https://github.com/Shougo/deoplete.nvim
-[dein.vim]: https://github.com/Shougo/dein.vim
 [denite.nvim]: https://github.com/Shougo/denite.nvim
 [vim-searchindex]: https://github.com/google/vim-searchindex
 [indentLine]: https://github.com/Yggdroot/indentLine

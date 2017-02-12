@@ -22,6 +22,7 @@ function! VimGalaxy#layers#ui#plugins() abort
         \ ['kennykaye/vim-relativity'],
         \ ['milkypostman/vim-togglelist'],
         \ ['majutsushi/tagbar'],
+        \ ['hecal3/vim-leader-guide'],
   \ ]
 endfunction
 
@@ -36,7 +37,7 @@ function! VimGalaxy#layers#ui#config() abort
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
   nmap <leader> [denite]
-  nnoremap <silent> [denite] :Denite -auto-resize menu<cr>
+  nnoremap <silent> [denite]m :Denite -auto-resize menu<cr>
   nnoremap <silent> [denite]T :Denite -auto-resize colorscheme<cr>
 
   " file mappings
@@ -46,20 +47,6 @@ function! VimGalaxy#layers#ui#config() abort
 
   " file buffer
   nnoremap <silent> [denite]bl :Denite -auto-resize buffer<cr>
-
-  " TODO: Work on this
-  let s:menus = {}
-
-  let s:menus.b = {'description': '+buffers'}
-  let s:menus.b.command_candidates = []
-
-  let s:menus.w = {'description': '+window'}
-  let s:menus.w.command_candidates = []
-
-  let s:menus.f = {'description': '+file'}
-  let s:menus.f.command_candidates = []
-
-  call denite#custom#var('menu', 'menus', s:menus)
 
   " TODO: change denite fire
   nnoremap <silent> [denite]g :Denite -auto-resize grep<cr>
@@ -83,13 +70,20 @@ function! VimGalaxy#layers#ui#config() abort
   call denite#custom#var('grep', 'command', ['ag'])
   call denite#custom#var('grep', 'recursive_opts', [])
   call denite#custom#var('grep', 'final_opts', [])
-  call denite#custom#var('grep', 'separator', [])
+  call denite#custom#var('grep', 'separator', ['--'])
   call denite#custom#var('grep', 'pattern_opt', [])
   call denite#custom#var('grep', 'default_opts',
-       \ ['--nopager', '--nocolor', '--nogroup', '--column'])
+       \ ['-i', '--vimgrep'])
 
   let g:toggle_list_no_mappings = 1
   nmap <script> <silent> <leader>wl :call ToggleLocationList()<CR>
   nmap <script> <silent> <leader>wq :call ToggleQuickfixList()<CR>
   noremap <leader>ct :TagbarToggle<CR>
+
+  " Define prefix dictionary
+  let g:lmap =  {}
+
+  call leaderGuide#register_prefix_descriptions("<Space>", "g:lmap")
+  nnoremap <silent> <leader> :<c-u>LeaderGuide '<Space>'<CR>
+  vnoremap <silent> <leader> :<c-u>LeaderGuideVisual '<Space>'<CR>
 endfunction
