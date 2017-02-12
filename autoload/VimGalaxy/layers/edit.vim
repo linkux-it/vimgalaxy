@@ -32,10 +32,10 @@ function! VimGalaxy#layers#edit#config() abort
   let g:multi_cursor_quit_key='<Esc>'
   let g:user_emmet_settings = {'html':{'quote_char': "'",},}
 
-  map <leader>l <Plug>(easymotion-lineforward)
-  map <leader>j <Plug>(easymotion-j)
-  map <leader>k <Plug>(easymotion-k)
-  map <leader>h <Plug>(easymotion-linebackward)
+  "map <Leader><Leader>l <Plug>(easymotion-lineforward)
+  "map <Leader><Leader>j <Plug>(easymotion-j)
+  "map <Leader><Leader>k <Plug>(easymotion-k)
+  "map <Leader><Leader>h <Plug>(easymotion-linebackward)
 
   let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
   let g:EasyMotion_smartcase = 1

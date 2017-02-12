@@ -36,27 +36,26 @@ function! VimGalaxy#layers#ui#config() abort
   nmap <silent><leader>fbf :NERDTreeFind<CR>
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-  nmap <leader> [denite]
-  nnoremap <silent> [denite]m :Denite -auto-resize menu<cr>
-  nnoremap <silent> [denite]T :Denite -auto-resize colorscheme<cr>
+  nnoremap <silent> <leader>T :Denite -auto-resize colorscheme<cr>
 
   " file mappings
-  nnoremap <silent> [denite]fl :Denite -auto-resize file_rec<cr>
-  nnoremap <silent> [denite]fp :Denite -auto-resize file_filepoint<cr>
-  nnoremap <silent> [denite]fr :Denite -auto-resize file_mru<cr>
+  nnoremap <silent> <leader>fl :Denite -auto-resize file_rec<cr>
+  nnoremap <silent> <leader>fp :Denite -auto-resize file_filepoint<cr>
+  nnoremap <silent> <leader>fr :Denite -auto-resize file_mru<cr>
+  nnoremap <silent> <leader>ft :Denite -auto-resize filetype<cr>
 
   " file buffer
-  nnoremap <silent> [denite]bl :Denite -auto-resize buffer<cr>
+  nnoremap <silent> <leader>bl :Denite -auto-resize buffer<cr>
 
   " TODO: change denite fire
-  nnoremap <silent> [denite]g :Denite -auto-resize grep<cr>
-  nnoremap <silent> [denite]h :Denite -auto-resize help<cr>
-  nnoremap <silent> [denite]dr :Denite -auto-resize directory_rec<cr>
-  nnoremap <silent> [denite]t :Denite -auto-resize filetype<cr>
-  nnoremap <silent> [denite]l :Denite -auto-resize line<cr>
-  nnoremap <silent> [denite]j :Denite -auto-resize jump_point<cr>
-  nnoremap <silent> [denite]c :Denite -auto-resize command<cr>
-  nnoremap <silent> [denite]o :Denite -auto-resize outline<cr>
+  nnoremap <silent> <leader>um :Denite -auto-resize menu<cr>
+  nnoremap <silent> <leader>ug :Denite -auto-resize grep<cr>
+  nnoremap <silent> <leader>uh :Denite -auto-resize help<cr>
+  nnoremap <silent> <leader>udr :Denite -auto-resize directory_rec<cr>
+  nnoremap <silent> <leader>ul :Denite -auto-resize line<cr>
+  nnoremap <silent> <leader>uj :Denite -auto-resize jump_point<cr>
+  nnoremap <silent> <leader>uc :Denite -auto-resize command<cr>
+  nnoremap <silent> <leader>uo :Denite -auto-resize outline<cr>
 
   call denite#custom#source('file_rec', 'sorters', ['sorter_sublime'])
   call denite#custom#source('file_mru', 'sorters', ['sorter_sublime'])
@@ -81,9 +80,32 @@ function! VimGalaxy#layers#ui#config() abort
   noremap <leader>ct :TagbarToggle<CR>
 
   " Define prefix dictionary
-  let g:lmap =  {}
+  let g:lmap =  {
+        \'T': ['Denite -auto-resize colorscheme', 'Change Theme'],
+        \' ': ['call feedkeys("\<Plug>easymotion-prefix")', 'Easy Motion'],
+        \'!': ['call feedkeys(":!")', 'Shell input'],
+        \'1': ['call feedkeys("\<Plug>AirlineSelectTab1")', 'Select Window 1'],
+        \'2': ['call feedkeys("\<Plug>AirlineSelectTab2")', 'Select Window 2'],
+        \'3': ['call feedkeys("\<Plug>AirlineSelectTab3")', 'Select Window 3'],
+        \'4': ['call feedkeys("\<Plug>AirlineSelectTab4")', 'Select Window 4'],
+        \'5': ['call feedkeys("\<Plug>AirlineSelectTab5")', 'Select Window 5'],
+        \'6': ['call feedkeys("\<Plug>AirlineSelectTab6")', 'Select Window 6'],
+        \'7': ['call feedkeys("\<Plug>AirlineSelectTab7")', 'Select Window 7'],
+        \'8': ['call feedkeys("\<Plug>AirlineSelectTab8")', 'Select Window 8'],
+        \'9': ['call feedkeys("\<Plug>AirlineSelectTab9")', 'Select Window 9'],
+  \}
 
-  call leaderGuide#register_prefix_descriptions("<Space>", "g:lmap")
+  let g:lmap.w =  { 'name': 'Window Menu' }
+  let g:lmap.f =  { 'name': 'File Menu' }
+  let g:lmap.b =  { 'name': 'Buffer Menu' }
+  let g:lmap.t =  { 'name': 'Tab Menu' }
+  let g:lmap.u =  { 'name': 'Denite Menu' }
+  let g:lmap.d =  { 'name': 'Dein Menu' }
+  let g:lmap._ =  { 'name': 'Comment Menu' }
+  let g:lmap.a =  { 'name': 'Tabularize Menu' }
+
+  call leaderGuide#register_prefix_descriptions('<Space>', 'g:lmap')
+
   nnoremap <silent> <leader> :<c-u>LeaderGuide '<Space>'<CR>
   vnoremap <silent> <leader> :<c-u>LeaderGuideVisual '<Space>'<CR>
 endfunction

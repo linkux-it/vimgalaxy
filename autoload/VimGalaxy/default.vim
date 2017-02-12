@@ -210,7 +210,6 @@ function! VimGalaxy#default#SetMappings() abort
   nnoremap <leader>ba  :BA<CR>
 
   " Search maps
-  nnoremap <leader>s /
   nnoremap <leader>svg :vimgrep
   nnoremap <leader>sg :grep
 

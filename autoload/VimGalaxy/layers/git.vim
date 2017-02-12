@@ -15,7 +15,20 @@ function! VimGalaxy#layers#git#config() abort
   nnoremap <silent> <Leader>gc :Gina commit<CR>
   nnoremap <silent> <Leader>gb :Gina blame<CR>
   nnoremap <silent> <Leader>gp :Gina push<CR>
+  nnoremap <silent> <Leader>gu :Gina pull<CR>
   nnoremap <silent> <Leader>gv :GV<CR>
+
+  " Create new menus not based on existing mappings:
+  let g:lmap.g = {
+        \'name' : 'Git Menu',
+        \'s' : ['Gina status', 'Git Status'],
+        \'d' : ['Gina diff', 'Git Diff'],
+        \'c' : ['Gina commit', 'Git Commit'],
+        \'b' : ['Gina blame', 'Git Blame'],
+        \'p' : ['Gina push', 'Git Push'],
+        \'u' : ['Gina pull', 'Git Pull'],
+        \'v' : ['GV', 'Git Visual'],
+  \}
 
   augroup vimgalaxy_layer_git
     autocmd!
