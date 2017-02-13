@@ -118,161 +118,157 @@ TODO:
 Name           | Description
 -------------- | ----------------------
 [dein.vim] | Dark powered Vim/Neovim plugin manager
-['vim-vimlint'] | 
-['vim-vimlparser'] | 
-['vim-scriptease'] | 
-['vimtex'] | 
-['vim-localvimrc'] | 
-['neotags.nvim'] | 
-['vim-fetch'] | 
-['PreserveNoEOL'] | 
-['vim-tmux-navigator'] | 
+[vim-vimlint] | Lint for vim script
+[vim-vimlparser] | VimL parser
+[vim-scriptease] | Vim plugin for making Vim plugins
+[vimtex] | A modern vim plugin for editing LaTeX files.
+[vim-localvimrc] | This plugin searches for local vimrc files in the file system tree of the currently opened file.
+[neotags.nvim] | A neovim plugin that generates and highlight ctags similar to easytags.
+[vim-fetch] | Make Vim handle line and column numbers in file names with a minimum of fuss.
+[PreserveNoEOL] | Preserve missing EOL at the end of text files. 
+[vim-tmux-navigator] | Seamless navigation between tmux panes and vim splits
 
 ##### UI
 
 Name           | Description
 -------------- | ----------------------
 [vim-startify] | Vim Startify
-[deoplete.nvim] | 
-[denite.nvim] | 
-[vim-searchindex] | 
-[indentLine] | 
-[FastFold] | 
-[vim-bufkill] | 
-[vim-gitgutter] | 
-[vim-airline] | 
-[vim-airline-themes] | 
-[vim-startify] | 
-[goyo.vim] | 
-[limelight.vim] | 
-[vim-mundo] | 
-[nerdtree] | 
-[nerdtree-git-plugin] | 
-[denite.nvim] | 
-[neomru.vim] | 
-[neoman.vim] | 
-[ZoomWin] | 
-[vim-relativity] | 
-[vim-togglelist] | 
-[tagbar] | 
-[vim-leader-guide] |
+[denite.nvim] | Dark powered asynchronous unite all interfaces for Neovim/Vim8
+[vim-searchindex] | Display number of search matches & index of a current match
+[indentLine] | A vim plugin to display the indention levels with thin vertical lines
+[FastFold] | Speed up Vim by updating folds only when called-for.
+[vim-bufkill] | In Vim, trying to unload, delete or wipe a buffer without closing the window or split
+[vim-gitgutter] | A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
+[vim-airline] | Lean & mean status/tabline for vim that's light as air
+[vim-airline-themes] | A collection of themes for vim-airline
+[goyo.vim] | Distraction-free writing in Vim
+[limelight.vim] | All the world's indeed a stage and we are merely players
+[vim-mundo] | Vim undo tree visualizer 
+[nerdtree] | A tree explorer plugin for vim. (Used temporally)
+[nerdtree-git-plugin] | A plugin of NERDTree showing git status (Used temporally)
+[neomru.vim] | MRU plugin includes unite.vim MRU sources
+[neoman.vim] | A modern man page plugin for vim
+[ZoomWin] | Zoom in/out of windows (toggle between one window and multi-window)
+[vim-relativity] | Toggle relative line numbers with ease.
+[vim-togglelist] | Functions to toggle the [Location List] and the [Quickfix List] windows.
+[tagbar] | Vim plugin that displays tags in a window, ordered by scope
+[vim-leader-guide] | is a vim keymap-display loosely inspired by emacs's guide-key.
 
 ##### Autocomplete
 
 Name           | Description
 -------------- | ----------------------
-['ultisnips'] | 
-['vim-snippets'] | 
-['neoinclude.vim'] | 
-['neco-syntax'] | 
-['auto-pairs'] | 
-['deoplete.nvim'] | 
+[ultisnips] | The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
+[vim-snippets] | Default snippets (Previously snipmate-snippets)
+[neoinclude.vim] | Include completion framework for neocomplete/deoplete
+[neco-syntax] | Syntax source for neocomplete/deoplete
+[auto-pairs] | Vim plugin, insert or delete brackets, parens, quotes in pair
+[deoplete.nvim] | Dark powered asynchronous completion framework for neovim
 
 ##### Checkers
 
 Name           | Description
 -------------- | ----------------------
-['neomake'] | 
+[neomake] | Asynchronous linting and make framework for Neovim/Vim<Paste>
 
 ##### Colorscheme
 
 Name           | Description
 -------------- | ----------------------
-['base16-vim'] | 
-['oceanic-next'] | 
-['colour-schemes'] | 
-['vim'] | 
-['nordisk'] | 
-['vim-monokai'] | 
+[base16-vim] | Base16 for Vim
+[oceanic-next] | Oceanic Next theme for neovim
+[colour-schemes] | Colour schemes for a variety of editors created by Dayle Rees. 
+[dracula] | A dark theme for Vim
+[nordisk] | A calm, fairly low contrast, dark color scheme
+[vim-monokai] | Monokai color scheme for Vim converted from Textmate theme
 
 ##### Edit
 
 Name           | Description
 -------------- | ----------------------
-['vim-surround'] | 
-['vim-unimpaired'] | 
-['vim-endwise'] | 
-['vim-obsession'] | 
-['vim-abolish'] | 
-['vim-repeat'] | 
-['tcomment_vim'] | 
-['searchtasks.vim'] | 
-['incsearch-fuzzy.vim'] | 
-['incsearch-easymotion.vim'] | 
-['vim-multiple-cursors'] | 
-['incsearch.vim'] | 
-['vim-asterisk'] | 
-['far.vim'] | 
-['NrrwRgn'] | 
-['vim-expand-region'] | 
-['tabular'] | 
-['emmet-vim'] | 
-['vim-easymotion'] | 
-['editorconfig-vim'] | 
+[vim-surround] | Quoting/parenthesizing made simple 
+[vim-unimpaired] | Pairs of handy bracket mappings 
+[vim-endwise] | Wisely add "end" in ruby, endfunction/endif/more in vim script, etc
+[vim-obsession] | Continuously updated session files
+[vim-abolish] | Easily search for, substitute, and abbreviate multiple variants of a word
+[vim-repeat] | Enable repeating supported plugin maps with "."
+[tcomment_vim] | An extensible & universal comment vim-plugin that also handles embedded filetypes
+[searchtasks.vim] | Plugin to search the labels often used as TODO, FIXME and XXX.
+[incsearch-fuzzy.vim] | incremantal fuzzy search extension for [incsearch.vim]
+[incsearch-easymotion.vim] | Integration between [incsearch.vim] and [vim-easymotion]
+[vim-multiple-cursors] | True Sublime Text style multiple selections for Vim
+[incsearch.vim] | Improved incremental searching for Vim
+[vim-asterisk] | *-Improved
+[far.vim] | Find And Replace Vim plugin
+[NrrwRgn] | A Narrow Region Plugin for vim (like Emacs Narrow Region)
+[vim-expand-region] | Vim plugin that allows you to visually select increasingly larger regions of text using the same key combination.
+[tabular] | Vim script for text filtering and alignment
+[emmet-vim] | emmet for vim
+[vim-easymotion] | Vim motions on speed!
+[editorconfig-vim] | EditorConfig plugin for Vim
 
 ##### Format
 
 Name           | Description
 -------------- | ----------------------
-['neoformat'] | 
+[neoformat] | A (Neo)vim plugin for formatting code.
 
 ##### Git
 
 Name           | Description
 -------------- | ----------------------
-['agit.vim'] | 
-['gv.vim'] | 
-['gina.vim'] | 
-['vim-fugitive'] | 
-['gitv'] | 
+[agit.vim] | A powerful Git log viewer
+[gv.vim] | A git commit browser
+[gina.vim] | Alpha: Git manipulation plugin for Neovim/Vim8 (new version of vim-gita)
+[vim-fugitive] | a Git wrapper so awesome, it should be illegal 
+[gitv] | gitk for Vim.
 
 ##### GraphQL
 
 Name           | Description
 -------------- | ----------------------
-['vim-graphql'] | 
+[vim-graphql] | A Vim plugin that provides GraphQL file detection and syntax highlighting.
 
 ##### Shell
 
 Name           | Description
 -------------- | ----------------------
-['deol.nvim'] | 
+[deol.nvim] | Dark powered shell interface for NeoVim.
 
 ##### Web
 
 Name           | Description
 -------------- | ----------------------
-['vim-less'] | 
-['scss-syntax.vim'] | 
-['vim-css3-syntax'] | 
-['vim-css-color'] | 
-['html5.vim'] | 
-['vim-stylus'] | 
-['vim-jade'] | 
-['mustache.vim'] | 
-['typescript-vim'] | 
-['vim-json'] | 
-['vim-json'] | 
-['vim-jsx'] | 
-['vim-markdown'] | 
-['MatchTag'] | 
+[vim-less] | vim syntax for LESS (dynamic CSS)
+[scss-syntax.vim] | Vim syntax file for scss (Sassy CSS)
+[vim-css3-syntax] | CSS3 syntax (and syntax defined in some foreign specifications) support for Vim's built-in syntax/css.vim
+[vim-css-color] | Preview colours in source code while editing 
+[html5.vim] | HTML5 omnicomplete and syntax
+[vim-stylus] | Syntax Highlighting for Stylus
+[vim-pug] | Vim Pug (formerly Jade) template engine syntax highlighting and indention
+[mustache.vim] | Vim mode for mustache and handlebars (Deprecated)
+[typescript-vim] | Typescript syntax files for Vim
+[vim-json] | Syntax highlighting for JSON in Vim
+[vim-jsx] | React JSX syntax highlighting and indenting for vim.
+[vim-markdown] | Markdown Vim Mode
+[MatchTag] | Vim's MatchParen for HTML tags 
 
 ##### Javascript
 
 Name           | Description
 -------------- | ----------------------
-['vim-javascript'] | 
-['vim-node.js'] | 
-['deoplete-ternjs'] | 
-['vim-jsbeautify'] | 
-['javascript-libraries-syntax.vim'] | 
+[vim-javascript] | Vastly improved Javascript indentation and syntax support in Vim.
+[vim-node.js] | File type detect plugin for vim which detects node.js shebang
+[deoplete-ternjs] | deoplete.nvim source for javascript
+[vim-jsbeautify] | vim plugin which formated javascript files by js-beautify
+[javascript-libraries-syntax.vim] | Syntax for JavaScript libraries
 
 ##### Python
 
 Name           | Description
 -------------- | ----------------------
-['deoplete-jedi'] | 
-['vim-virtualenv'] | 
+[deoplete-jedi] | deoplete.nvim source for Python
+[vim-virtualenv] | Vim plugin for working with python virtualenvs
 
 #### Credits & Thanks
 - [![GitHub contributors](https://img.shields.io/github/contributors/linkux-it/VimGalaxy.svg)](https://github.com/linkux-it/VimGalaxy/graphs/contributors)
@@ -307,73 +303,73 @@ Name           | Description
 [vim-togglelist]: https://github.com/milkypostman/vim-togglelist
 [tagbar]: https://github.com/majutsushi/tagbar
 [vim-leader-guide]: https://github.com/hecal3/vim-leader-guide
-['vim-vimlint']: https://github.com/syngan/vim-vimlint
-['vim-vimlparser']: https://github.com/ynkdir/vim-vimlparser
-['vim-scriptease']: https://github.com/tpope/vim-scriptease
-['vimtex']: https://github.com/lervag/vimtex
-['vim-localvimrc']: https://github.com/embear/vim-localvimrc
-['neotags.nvim']: https://github.com/c0r73x/neotags.nvim
-['vim-fetch']: https://github.com/kopischke/vim-fetch
-['PreserveNoEOL']: https://github.com/vim-scripts/PreserveNoEOL
-['vim-tmux-navigator']: https://github.com/christoomey/vim-tmux-navigator
-['ultisnips']: https://github.com/SirVer/ultisnips
-['vim-snippets']: https://github.com/honza/vim-snippets
-['neoinclude.vim']: https://github.com/Shougo/neoinclude.vim
-['neco-syntax']: https://github.com/Shougo/neco-syntax
-['auto-pairs']: https://github.com/jiangmiao/auto-pairs
-['deoplete.nvim']: https://github.com/Shougo/deoplete.nvim
-['neomake']: https://github.com/neomake/neomake
-['base16-vim']: https://github.com/chriskempson/base16-vim
-['oceanic-next']: https://github.com/mhartington/oceanic-next
-['colour-schemes']: https://github.com/daylerees/colour-schemes
-['vim']: https://github.com/dracula/vim
-['nordisk']: https://github.com/kamwitsta/nordisk
-['vim-monokai']: https://github.com/sickill/vim-monokai
-['vim-surround']: https://github.com/tpope/vim-surround
-['vim-unimpaired']: https://github.com/tpope/vim-unimpaired
-['vim-endwise']: https://github.com/tpope/vim-endwise
-['vim-obsession']: https://github.com/tpope/vim-obsession
-['vim-abolish']: https://github.com/tpope/vim-abolish
-['vim-repeat']: https://github.com/tpope/vim-repeat
-['tcomment_vim']: https://github.com/tomtom/tcomment_vim
-['searchtasks.vim']: https://github.com/gilsondev/searchtasks.vim
-['incsearch-fuzzy.vim']: https://github.com/haya14busa/incsearch-fuzzy.vim
-['incsearch-easymotion.vim']: https://github.com/haya14busa/incsearch-easymotion.vim
-['vim-multiple-cursors']: https://github.com/terryma/vim-multiple-cursors
-['incsearch.vim']: https://github.com/haya14busa/incsearch.vim
-['vim-asterisk']: https://github.com/haya14busa/vim-asterisk
-['far.vim']: https://github.com/brooth/far.vim
-['NrrwRgn']: https://github.com/chrisbra/NrrwRgn
-['vim-expand-region']: https://github.com/terryma/vim-expand-region
-['tabular']: https://github.com/godlygeek/tabular
-['emmet-vim']: https://github.com/mattn/emmet-vim
-['vim-easymotion']: https://github.com/easymotion/vim-easymotion
-['editorconfig-vim']: https://github.com/editorconfig/editorconfig-vim
-['neoformat']: https://github.com/sbdchd/neoformat
-['vim-graphql']: https://github.com/jparise/vim-graphql
-['deol.nvim']: https://github.com/Shougo/deol.nvim
-['agit.vim']: https://github.com/cohama/agit.vim
-['gv.vim']: https://github.com/junegunn/gv.vim
-['gina.vim']: https://github.com/lambdalisue/gina.vim
-['vim-fugitive']: https://github.com/tpope/vim-fugitive
-['gitv']: https://github.com/gregsexton/gitv
-['vim-less']: https://github.com/groenewege/vim-less
-['scss-syntax.vim']: https://github.com/cakebaker/scss-syntax.vim
-['vim-css3-syntax']: https://github.com/hail2u/vim-css3-syntax
-['vim-css-color']: https://github.com/ap/vim-css-color
-['html5.vim']: https://github.com/othree/html5.vim
-['vim-stylus']: https://github.com/wavded/vim-stylus
-['vim-jade']: https://github.com/digitaltoad/vim-jade
-['mustache.vim']: https://github.com/juvenn/mustache.vim
-['typescript-vim']: https://github.com/leafgarland/typescript-vim
-['vim-json']: https://github.com/leshill/vim-json
-['vim-jsx']: https://github.com/mxw/vim-jsx
-['vim-markdown']: https://github.com/plasticboy/vim-markdown
-['MatchTag']: https://github.com/gregsexton/MatchTag
-['vim-javascript']: https://github.com/pangloss/vim-javascript
-['vim-node.js']: https://github.com/mmalecki/vim-node.js
-['deoplete-ternjs']: https://github.com/carlitux/deoplete-ternjs
-['vim-jsbeautify']: https://github.com/maksimr/vim-jsbeautify
-['javascript-libraries-syntax.vim']: https://github.com/othree/javascript-libraries-syntax.vim
-['deoplete-jedi']: https://github.com/zchee/deoplete-jedi
-['vim-virtualenv']: https://github.com/jmcantrell/vim-virtualenv
+[vim-vimlint]: https://github.com/syngan/vim-vimlint
+[vim-vimlparser]: https://github.com/ynkdir/vim-vimlparser
+[vim-scriptease]: https://github.com/tpope/vim-scriptease
+[vimtex]: https://github.com/lervag/vimtex
+[vim-localvimrc]: https://github.com/embear/vim-localvimrc
+[neotags.nvim]: https://github.com/c0r73x/neotags.nvim
+[vim-fetch]: https://github.com/kopischke/vim-fetch
+[PreserveNoEOL]: https://github.com/vim-scripts/PreserveNoEOL
+[vim-tmux-navigator]: https://github.com/christoomey/vim-tmux-navigator
+[ultisnips]: https://github.com/SirVer/ultisnips
+[vim-snippets]: https://github.com/honza/vim-snippets
+[neoinclude.vim]: https://github.com/Shougo/neoinclude.vim
+[neco-syntax]: https://github.com/Shougo/neco-syntax
+[auto-pairs]: https://github.com/jiangmiao/auto-pairs
+[deoplete.nvim]: https://github.com/Shougo/deoplete.nvim
+[neomake]: https://github.com/neomake/neomake
+[base16-vim]: https://github.com/chriskempson/base16-vim
+[oceanic-next]: https://github.com/mhartington/oceanic-next
+[colour-schemes]: https://github.com/daylerees/colour-schemes
+[dracula]: https://github.com/dracula/vim
+[nordisk]: https://github.com/kamwitsta/nordisk
+[vim-monokai]: https://github.com/sickill/vim-monokai
+[vim-surround]: https://github.com/tpope/vim-surround
+[vim-unimpaired]: https://github.com/tpope/vim-unimpaired
+[vim-endwise]: https://github.com/tpope/vim-endwise
+[vim-obsession]: https://github.com/tpope/vim-obsession
+[vim-abolish]: https://github.com/tpope/vim-abolish
+[vim-repeat]: https://github.com/tpope/vim-repeat
+[tcomment_vim]: https://github.com/tomtom/tcomment_vim
+[searchtasks.vim]: https://github.com/gilsondev/searchtasks.vim
+[incsearch-fuzzy.vim]: https://github.com/haya14busa/incsearch-fuzzy.vim
+[incsearch-easymotion.vim]: https://github.com/haya14busa/incsearch-easymotion.vim
+[vim-multiple-cursors]: https://github.com/terryma/vim-multiple-cursors
+[incsearch.vim]: https://github.com/haya14busa/incsearch.vim
+[vim-asterisk]: https://github.com/haya14busa/vim-asterisk
+[far.vim]: https://github.com/brooth/far.vim
+[NrrwRgn]: https://github.com/chrisbra/NrrwRgn
+[vim-expand-region]: https://github.com/terryma/vim-expand-region
+[tabular]: https://github.com/godlygeek/tabular
+[emmet-vim]: https://github.com/mattn/emmet-vim
+[vim-easymotion]: https://github.com/easymotion/vim-easymotion
+[editorconfig-vim]: https://github.com/editorconfig/editorconfig-vim
+[neoformat]: https://github.com/sbdchd/neoformat
+[vim-graphql]: https://github.com/jparise/vim-graphql
+[deol.nvim]: https://github.com/Shougo/deol.nvim
+[agit.vim]: https://github.com/cohama/agit.vim
+[gv.vim]: https://github.com/junegunn/gv.vim
+[gina.vim]: https://github.com/lambdalisue/gina.vim
+[vim-fugitive]: https://github.com/tpope/vim-fugitive
+[gitv]: https://github.com/gregsexton/gitv
+[vim-less]: https://github.com/groenewege/vim-less
+[scss-syntax.vim]: https://github.com/cakebaker/scss-syntax.vim
+[vim-css3-syntax]: https://github.com/hail2u/vim-css3-syntax
+[vim-css-color]: https://github.com/ap/vim-css-color
+[html5.vim]: https://github.com/othree/html5.vim
+[vim-stylus]: https://github.com/wavded/vim-stylus
+[vim-pug]: https://github.com/digitaltoad/vim-pug
+[mustache.vim]: https://github.com/juvenn/mustache.vim
+[typescript-vim]: https://github.com/leafgarland/typescript-vim
+[vim-json]: https://github.com/leshill/vim-json
+[vim-jsx]: https://github.com/mxw/vim-jsx
+[vim-markdown]: https://github.com/plasticboy/vim-markdown
+[MatchTag]: https://github.com/gregsexton/MatchTag
+[vim-javascript]: https://github.com/pangloss/vim-javascript
+[vim-node.js]: https://github.com/mmalecki/vim-node.js
+[deoplete-ternjs]: https://github.com/carlitux/deoplete-ternjs
+[vim-jsbeautify]: https://github.com/maksimr/vim-jsbeautify
+[javascript-libraries-syntax.vim]: https://github.com/othree/javascript-libraries-syntax.vim
+[deoplete-jedi]: https://github.com/zchee/deoplete-jedi
+[vim-virtualenv]: https://github.com/jmcantrell/vim-virtualenv
