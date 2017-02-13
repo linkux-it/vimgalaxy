@@ -35,6 +35,14 @@ Is a neovim and vim 8 setup like spacemacs and based on spacevim
     - [Core](#core)
     - [UI](#ui)
     - [Autocomplete](#autocomplete)
+    - [Checkers](#checkers)
+    - [Colorscheme](#colorscheme)
+    - [Edit](#edit)
+    - [Format](#format)
+    - [Git](#git)
+    - [GraphQL](#graphql)
+    - [Shell](#shell)
+    - [Web](#web)
     - [Javascript](#javascript)
     - [Python](#python)
 - [Custom configuration](#custom-configuration)
@@ -110,6 +118,15 @@ TODO:
 Name           | Description
 -------------- | ----------------------
 [dein.vim] | Dark powered Vim/Neovim plugin manager
+['vim-vimlint'] | 
+['vim-vimlparser'] | 
+['vim-scriptease'] | 
+['vimtex'] | 
+['vim-localvimrc'] | 
+['neotags.nvim'] | 
+['vim-fetch'] | 
+['PreserveNoEOL'] | 
+['vim-tmux-navigator'] | 
 
 ##### UI
 
@@ -138,13 +155,124 @@ Name           | Description
 [vim-relativity] | 
 [vim-togglelist] | 
 [tagbar] | 
+[vim-leader-guide] |
 
 ##### Autocomplete
 
 Name           | Description
 -------------- | ----------------------
-[vim-startify] | Vim Startify
+['ultisnips'] | 
+['vim-snippets'] | 
+['neoinclude.vim'] | 
+['neco-syntax'] | 
+['auto-pairs'] | 
+['deoplete.nvim'] | 
 
+##### Checkers
+
+Name           | Description
+-------------- | ----------------------
+['neomake'] | 
+
+##### Colorscheme
+
+Name           | Description
+-------------- | ----------------------
+['base16-vim'] | 
+['oceanic-next'] | 
+['colour-schemes'] | 
+['vim'] | 
+['nordisk'] | 
+['vim-monokai'] | 
+
+##### Edit
+
+Name           | Description
+-------------- | ----------------------
+['vim-surround'] | 
+['vim-unimpaired'] | 
+['vim-endwise'] | 
+['vim-obsession'] | 
+['vim-abolish'] | 
+['vim-repeat'] | 
+['tcomment_vim'] | 
+['searchtasks.vim'] | 
+['incsearch-fuzzy.vim'] | 
+['incsearch-easymotion.vim'] | 
+['vim-multiple-cursors'] | 
+['incsearch.vim'] | 
+['vim-asterisk'] | 
+['far.vim'] | 
+['NrrwRgn'] | 
+['vim-expand-region'] | 
+['tabular'] | 
+['emmet-vim'] | 
+['vim-easymotion'] | 
+['editorconfig-vim'] | 
+
+##### Format
+
+Name           | Description
+-------------- | ----------------------
+['neoformat'] | 
+
+##### Git
+
+Name           | Description
+-------------- | ----------------------
+['agit.vim'] | 
+['gv.vim'] | 
+['gina.vim'] | 
+['vim-fugitive'] | 
+['gitv'] | 
+
+##### GraphQL
+
+Name           | Description
+-------------- | ----------------------
+['vim-graphql'] | 
+
+##### Shell
+
+Name           | Description
+-------------- | ----------------------
+['deol.nvim'] | 
+
+##### Web
+
+Name           | Description
+-------------- | ----------------------
+['vim-less'] | 
+['scss-syntax.vim'] | 
+['vim-css3-syntax'] | 
+['vim-css-color'] | 
+['html5.vim'] | 
+['vim-stylus'] | 
+['vim-jade'] | 
+['mustache.vim'] | 
+['typescript-vim'] | 
+['vim-json'] | 
+['vim-json'] | 
+['vim-jsx'] | 
+['vim-markdown'] | 
+['MatchTag'] | 
+
+##### Javascript
+
+Name           | Description
+-------------- | ----------------------
+['vim-javascript'] | 
+['vim-node.js'] | 
+['deoplete-ternjs'] | 
+['vim-jsbeautify'] | 
+['javascript-libraries-syntax.vim'] | 
+
+##### Python
+
+Name           | Description
+-------------- | ----------------------
+['deoplete-jedi'] | 
+['vim-virtualenv'] | 
 
 #### Credits & Thanks
 - [![GitHub contributors](https://img.shields.io/github/contributors/linkux-it/VimGalaxy.svg)](https://github.com/linkux-it/VimGalaxy/graphs/contributors)
@@ -178,3 +306,74 @@ Name           | Description
 [vim-relativity]: https://github.com/kennykaye/vim-relativity
 [vim-togglelist]: https://github.com/milkypostman/vim-togglelist
 [tagbar]: https://github.com/majutsushi/tagbar
+[vim-leader-guide]: https://github.com/hecal3/vim-leader-guide
+['vim-vimlint']: https://github.com/syngan/vim-vimlint
+['vim-vimlparser']: https://github.com/ynkdir/vim-vimlparser
+['vim-scriptease']: https://github.com/tpope/vim-scriptease
+['vimtex']: https://github.com/lervag/vimtex
+['vim-localvimrc']: https://github.com/embear/vim-localvimrc
+['neotags.nvim']: https://github.com/c0r73x/neotags.nvim
+['vim-fetch']: https://github.com/kopischke/vim-fetch
+['PreserveNoEOL']: https://github.com/vim-scripts/PreserveNoEOL
+['vim-tmux-navigator']: https://github.com/christoomey/vim-tmux-navigator
+['ultisnips']: https://github.com/SirVer/ultisnips
+['vim-snippets']: https://github.com/honza/vim-snippets
+['neoinclude.vim']: https://github.com/Shougo/neoinclude.vim
+['neco-syntax']: https://github.com/Shougo/neco-syntax
+['auto-pairs']: https://github.com/jiangmiao/auto-pairs
+['deoplete.nvim']: https://github.com/Shougo/deoplete.nvim
+['neomake']: https://github.com/neomake/neomake
+['base16-vim']: https://github.com/chriskempson/base16-vim
+['oceanic-next']: https://github.com/mhartington/oceanic-next
+['colour-schemes']: https://github.com/daylerees/colour-schemes
+['vim']: https://github.com/dracula/vim
+['nordisk']: https://github.com/kamwitsta/nordisk
+['vim-monokai']: https://github.com/sickill/vim-monokai
+['vim-surround']: https://github.com/tpope/vim-surround
+['vim-unimpaired']: https://github.com/tpope/vim-unimpaired
+['vim-endwise']: https://github.com/tpope/vim-endwise
+['vim-obsession']: https://github.com/tpope/vim-obsession
+['vim-abolish']: https://github.com/tpope/vim-abolish
+['vim-repeat']: https://github.com/tpope/vim-repeat
+['tcomment_vim']: https://github.com/tomtom/tcomment_vim
+['searchtasks.vim']: https://github.com/gilsondev/searchtasks.vim
+['incsearch-fuzzy.vim']: https://github.com/haya14busa/incsearch-fuzzy.vim
+['incsearch-easymotion.vim']: https://github.com/haya14busa/incsearch-easymotion.vim
+['vim-multiple-cursors']: https://github.com/terryma/vim-multiple-cursors
+['incsearch.vim']: https://github.com/haya14busa/incsearch.vim
+['vim-asterisk']: https://github.com/haya14busa/vim-asterisk
+['far.vim']: https://github.com/brooth/far.vim
+['NrrwRgn']: https://github.com/chrisbra/NrrwRgn
+['vim-expand-region']: https://github.com/terryma/vim-expand-region
+['tabular']: https://github.com/godlygeek/tabular
+['emmet-vim']: https://github.com/mattn/emmet-vim
+['vim-easymotion']: https://github.com/easymotion/vim-easymotion
+['editorconfig-vim']: https://github.com/editorconfig/editorconfig-vim
+['neoformat']: https://github.com/sbdchd/neoformat
+['vim-graphql']: https://github.com/jparise/vim-graphql
+['deol.nvim']: https://github.com/Shougo/deol.nvim
+['agit.vim']: https://github.com/cohama/agit.vim
+['gv.vim']: https://github.com/junegunn/gv.vim
+['gina.vim']: https://github.com/lambdalisue/gina.vim
+['vim-fugitive']: https://github.com/tpope/vim-fugitive
+['gitv']: https://github.com/gregsexton/gitv
+['vim-less']: https://github.com/groenewege/vim-less
+['scss-syntax.vim']: https://github.com/cakebaker/scss-syntax.vim
+['vim-css3-syntax']: https://github.com/hail2u/vim-css3-syntax
+['vim-css-color']: https://github.com/ap/vim-css-color
+['html5.vim']: https://github.com/othree/html5.vim
+['vim-stylus']: https://github.com/wavded/vim-stylus
+['vim-jade']: https://github.com/digitaltoad/vim-jade
+['mustache.vim']: https://github.com/juvenn/mustache.vim
+['typescript-vim']: https://github.com/leafgarland/typescript-vim
+['vim-json']: https://github.com/leshill/vim-json
+['vim-jsx']: https://github.com/mxw/vim-jsx
+['vim-markdown']: https://github.com/plasticboy/vim-markdown
+['MatchTag']: https://github.com/gregsexton/MatchTag
+['vim-javascript']: https://github.com/pangloss/vim-javascript
+['vim-node.js']: https://github.com/mmalecki/vim-node.js
+['deoplete-ternjs']: https://github.com/carlitux/deoplete-ternjs
+['vim-jsbeautify']: https://github.com/maksimr/vim-jsbeautify
+['javascript-libraries-syntax.vim']: https://github.com/othree/javascript-libraries-syntax.vim
+['deoplete-jedi']: https://github.com/zchee/deoplete-jedi
+['vim-virtualenv']: https://github.com/jmcantrell/vim-virtualenv

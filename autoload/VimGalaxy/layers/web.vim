@@ -10,7 +10,6 @@ function! VimGalaxy#layers#web#plugins() abort
         \ ['juvenn/mustache.vim', { 'on_ft' : ['mustache']}],
         \ ['leafgarland/typescript-vim', { 'on_ft' : ['typescript']}],
         \ ['leshill/vim-json', { 'on_ft' : ['javascript','json']}],
-        \ ['leshill/vim-json', { 'on_ft' : ['javascript','json']}],
         \ ['mxw/vim-jsx', { 'on_ft' : ['jsx','javascript.jsx']}],
         \ ['plasticboy/vim-markdown', { 'on_ft' : 'markdown'}],
         \ ['gregsexton/MatchTag', { 'on_ft' : ['html', 'xml']}],
