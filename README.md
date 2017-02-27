@@ -144,8 +144,6 @@ Name           | Description
 [goyo.vim] | Distraction-free writing in Vim
 [limelight.vim] | All the world's indeed a stage and we are merely players
 [vim-mundo] | Vim undo tree visualizer 
-[nerdtree] | A tree explorer plugin for vim. (Used temporally)
-[nerdtree-git-plugin] | A plugin of NERDTree showing git status (Used temporally)
 [neomru.vim] | MRU plugin includes unite.vim MRU sources
 [neoman.vim] | A modern man page plugin for vim
 [ZoomWin] | Zoom in/out of windows (toggle between one window and multi-window)
@@ -169,7 +167,8 @@ Name           | Description
 
 Name           | Description
 -------------- | ----------------------
-[neomake] | Asynchronous linting and make framework for Neovim/Vim<Paste>
+[neomake] | Asynchronous linting and make framework for Neovim/Vim
+[neomake-autolint] | Lint as you type using Neomake
 
 ##### Colorscheme
 
@@ -206,6 +205,7 @@ Name           | Description
 [emmet-vim] | emmet for vim
 [vim-easymotion] | Vim motions on speed!
 [editorconfig-vim] | EditorConfig plugin for Vim
+[vim-sort-motion] | This plugin provides the ability to sort in Vim using text objects and motions.
 
 ##### Format
 
@@ -293,8 +293,6 @@ Name           | Description
 [goyo.vim]: https://github.com/junegunn/goyo.vim
 [limelight.vim]: https://github.com/junegunn/limelight.vim
 [vim-mundo]: https://github.com/simnalamburt/vim-mundo
-[nerdtree]: https://github.com/scrooloose/nerdtree
-[nerdtree-git-plugin]: https://github.com/Xuyuanp/nerdtree-git-plugin
 [denite.nvim]: https://github.com/Shougo/denite.nvim
 [neomru.vim]: https://github.com/Shougo/neomru.vim
 [neoman.vim]: https://github.com/nhooyr/neoman.vim
@@ -373,3 +371,5 @@ Name           | Description
 [javascript-libraries-syntax.vim]: https://github.com/othree/javascript-libraries-syntax.vim
 [deoplete-jedi]: https://github.com/zchee/deoplete-jedi
 [vim-virtualenv]: https://github.com/jmcantrell/vim-virtualenv
+[neomake-autolint]: https://github.com/https://github.com/dojoteef/neomake-autolint
+[vim-sort-motion]: https://github.com/christoomey/vim-sort-motion

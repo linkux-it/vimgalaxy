@@ -12,11 +12,11 @@ if has('nvim')
   call zvim#utils#source_rc('neovim.vim')
 endif
 
-" This needs call at end
-" enable syntax highlighting
- syntax on
-
  " Required:
  " Enable filetype plugins
  filetype plugin indent on
+
+" This needs call at end
+" enable syntax highlighting
+ syntax on
 

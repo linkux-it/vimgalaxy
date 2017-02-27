@@ -95,10 +95,6 @@ endfunction
 
 
 function! VimGalaxy#welcome() abort
-  " if exists(':NERDTreeToogle') == 2
-  "     NERDTreeToogle
-  " endif
-
   if exists(':Startify') == 2
     wincmd p
     Startify

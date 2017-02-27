@@ -16,10 +16,11 @@ function! VimGalaxy#layers#edit#plugins() abort
         \ ['brooth/far.vim'],
         \ ['chrisbra/NrrwRgn'],
         \ ['terryma/vim-expand-region'],
+        \ ['christoomey/vim-sort-motion'],
         \ ['godlygeek/tabular', { 'on_cmd': 'Tabularize'}],
         \ ['mattn/emmet-vim', { 'on_cmd' : 'EmmetInstall', 'on_ft': ['htmldjango','jsx','swig','html','xml','xsl','xslt','xsd','css','sass','scss','less','mustache','handlebars','hbs'] }],
         \ ['easymotion/vim-easymotion'],
-        \ ['editorconfig/editorconfig-vim', { 'on_cmd' : 'EditorConfigReload', 'on_i': 1}],
+        \ ['editorconfig/editorconfig-vim', { 'on_cmd' : 'EditorConfigReload', 'on_event': 'InsertEnter'}],
   \ ]
   return plugins
 endfunction

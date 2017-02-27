@@ -111,6 +111,10 @@ function! VimGalaxy#default#SetOptions() abort
     set term=screen-256color
   endif
 
+  if &compatible
+    set nocompatible
+  endif
+
   "    " indent use backspace delete indent, eol use backspace delete line at
   "    " begining start delete the char you just typed in if you do not use set
   "    " nocompatible ,you need this

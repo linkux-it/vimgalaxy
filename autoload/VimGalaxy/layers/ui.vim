@@ -13,8 +13,6 @@ function! VimGalaxy#layers#ui#plugins() abort
         \ ['junegunn/goyo.vim', { 'on_cmd' : 'Goyo', 'loadconf' : 1}],
         \ ['junegunn/limelight.vim', { 'on_cmd' : 'Limelight'}],
         \ ['simnalamburt/vim-mundo', { 'on_cmd' : 'MundoToggle'}],
-        \ ['scrooloose/nerdtree',{'on_cmd' : 'NERDTreeToggle', 'loadconf' : 1}],
-        \ ['Xuyuanp/nerdtree-git-plugin'],
         \ ['Shougo/denite.nvim'],
         \ ['Shougo/neomru.vim'],
         \ ['nhooyr/neoman.vim'],
@@ -26,16 +24,24 @@ function! VimGalaxy#layers#ui#plugins() abort
   \ ]
 endfunction
 
-
 function! VimGalaxy#layers#ui#config() abort
-  let g:mundo_prefer_python3=1
+  let g:mundo_prefer_python3 = 1
 
+  set wildignore+=node_modules/
+  set wildignore+=.git/
+  let g:netrw_list_hide = '^.*\.o$,^.*\.obj$,^.*\.bak$,^.*\.exe$,^.*\.pyc$,^DS_Store$'
+	let g:netrw_hide=1              " hide hidden files
+	let g:netrw_dirhistmax=100      " keep more history
+	let g:netrw_altfile=1           " last edited file '#'
+	let g:netrw_liststyle=3         " thin
+	let g:netrw_alto=0              " open files on right
+	let g:netrw_winsize=-28         " preview winsize
+	let g:netrw_preview=1           " open previews vertically
+	let g:netrw_use_errorwindow=0   " suppress error window
+  let g:netrw_browse_split=4      " open files in previous window
+
+  nmap <silent><leader>fb :Lexplore <bar> :wincmd =<CR>
   nnoremap <leader>bh :MundoToggle<CR>
-
-  nmap <silent><leader>fb :NERDTreeToggle<CR>
-  nmap <silent><leader>fbf :NERDTreeFind<CR>
-  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
   nnoremap <silent> <leader>T :Denite -auto-resize colorscheme<cr>
 
   " file mappings
