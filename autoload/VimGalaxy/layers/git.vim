@@ -12,10 +12,12 @@ endfunction
 function! VimGalaxy#layers#git#config() abort
   nnoremap <silent> <Leader>gs :Gina status<CR>
   nnoremap <silent> <Leader>gd :Gina diff<CR>
-  nnoremap <silent> <Leader>gc :Gina commit<CR>
   nnoremap <silent> <Leader>gb :Gina blame<CR>
-  nnoremap <silent> <Leader>gp :Gina push<CR>
-  nnoremap <silent> <Leader>gu :Gina pull<CR>
+  nnoremap <silent> <Leader>gc :Gina!! commit<CR>
+  nnoremap <silent> <Leader>gp :Gina!! push<CR>
+  nnoremap <silent> <Leader>gu :Gina!! pull<CR>
+  nnoremap <silent> <Leader>gr :Gina!! rebase<CR>
+  nnoremap <silent> <Leader>gri :Gina!! rebase -i<CR>
   nnoremap <silent> <Leader>gv :GV<CR>
 
   if exists('g:lmap')

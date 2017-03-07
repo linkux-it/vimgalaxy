@@ -27,18 +27,18 @@ endfunction
 function! VimGalaxy#layers#ui#config() abort
   let g:mundo_prefer_python3 = 1
 
-  set wildignore+=node_modules/
-  set wildignore+=.git/
-  let g:netrw_list_hide = '^.*\.o$,^.*\.obj$,^.*\.bak$,^.*\.exe$,^.*\.pyc$,^DS_Store$'
-	let g:netrw_hide=1              " hide hidden files
-	let g:netrw_dirhistmax=100      " keep more history
-	let g:netrw_altfile=1           " last edited file '#'
-	let g:netrw_liststyle=3         " thin
-	let g:netrw_alto=0              " open files on right
-	let g:netrw_winsize=-28         " preview winsize
-	let g:netrw_preview=1           " open previews vertically
-	let g:netrw_use_errorwindow=0   " suppress error window
+  let g:netrw_list_hide = '^.*\.o$,^.*\.obj$,^.*\.bak$,^.*\.exe$,^.*\.pyc$,^.DS_Store$,^.git/*,^node_modules/*'
+  let g:netrw_hide=1              " hide hidden files
+  let g:netrw_dirhistmax=100      " keep more history
+  let g:netrw_altfile=1           " last edited file '#'
+  let g:netrw_liststyle=3         " thin
+  let g:netrw_alto=0              " open files on right
+  let g:netrw_winsize=-28         " preview winsize
+  let g:netrw_preview=1           " open previews vertically
+  let g:netrw_use_errorwindow=0   " suppress error window
   let g:netrw_browse_split=4      " open files in previous window
+  let g:netrw_banner=0
+
 
   nmap <silent><leader>fb :Lexplore <bar> :wincmd =<CR>
   nnoremap <leader>bh :MundoToggle<CR>

@@ -24,12 +24,10 @@ endfunction
 
 
 function VimGalaxy#layers#autocomplete#config()
-  let g:UltiSnipsExpandTrigger="<tab>"
-  let g:UltiSnipsJumpForwardTrigger="<c-j>"
-  let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
-  let g:deoplete#enable_at_startup = 1
-  let g:deoplete#auto_complete_delay = 10 " Test for better value
-  call deoplete#custom#set('_', 'sorters', ['sorter_word'])
-  call deoplete#custom#set('ultisnips', 'rank', 9999)
+  let g:UltiSnipsExpandTrigger = "<tab>"
+  let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+  let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+  let g:UltiSnipsSnippetsDir = $HOME."/.config/UltiSnips"
+  let g:UltiSnipsSnippetDirectories = ['UltiSnips', $HOME.'/.config/UltiSnips']
+  let g:UltiSnipsEnableSnipMate = 0
 endfunction
