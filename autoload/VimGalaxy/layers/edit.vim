@@ -51,9 +51,9 @@ function! VimGalaxy#layers#edit#config() abort
   let g:incsearch#magic = '\m' " magic
   let g:incsearch#magic = '\M' " nomagic
 
-  map / <Plug>(incsearch-easymotion-/)
-  map ? <Plug>(incsearch-easymotion-?)
-  map g/ <Plug>(incsearch-easymotion-stay)
+  map z/ <Plug>(incsearch-easymotion-/)
+  map z? <Plug>(incsearch-easymotion-?)
+  map gz/ <Plug>(incsearch-easymotion-stay)
 
   " incsearch.vim x fuzzy x vim-easymotion
   function! s:config_easyfuzzymotion(...) abort

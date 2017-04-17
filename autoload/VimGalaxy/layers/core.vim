@@ -9,6 +9,7 @@ function! VimGalaxy#layers#core#plugins() abort
         \ ['kopischke/vim-fetch'],
         \ ['vim-scripts/PreserveNoEOL'],
         \ ['christoomey/vim-tmux-navigator'],
+        \ ['wikitopian/hardmode'],
   \ ] 
   return plugins
 endfunction
@@ -21,5 +22,8 @@ function! VimGalaxy#layers#core#config() abort
   let g:neotags_enabled = 1
   let g:neotags_file = ".tags"
   let g:neotags_ctags_args = []
+
+  autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+  nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 endfunction
 

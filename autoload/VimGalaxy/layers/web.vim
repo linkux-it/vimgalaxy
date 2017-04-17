@@ -13,6 +13,7 @@ function! VimGalaxy#layers#web#plugins() abort
         \ ['mxw/vim-jsx', { 'on_ft' : ['jsx','javascript.jsx']}],
         \ ['plasticboy/vim-markdown', { 'on_ft' : 'markdown'}],
         \ ['gregsexton/MatchTag', { 'on_ft' : ['html', 'xml']}],
+        \ ['chr4/nginx.vim', { 'on_ft' : ['nginx']}],
   \ ] 
   return plugins
 endfunction

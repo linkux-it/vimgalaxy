@@ -3,6 +3,7 @@ function! VimGalaxy#layers#lang#javascript#plugins() abort
       \ ['pangloss/vim-javascript', {'on_ft' : ['javascript']}],
       \ ['mmalecki/vim-node.js', {'on_ft' : ['javascript']}],
       \ ['carlitux/deoplete-ternjs', { 'on_ft' : ['javascript']}],
+      \ ['wokalski/autocomplete-flow', { 'on_ft' : ['javascript']}],
       \ ['maksimr/vim-jsbeautify', { 'on_ft' : ['javascript']}],
       \ ['othree/javascript-libraries-syntax.vim', { 'on_ft' : ['javascript','coffee','ls','typescript']}],
     \ ]

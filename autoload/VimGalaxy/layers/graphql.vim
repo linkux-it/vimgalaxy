@@ -1,4 +1,4 @@
-function! VimGalaxy#layers#format#plugins() abort
+function! VimGalaxy#layers#graphql#plugins() abort
   return [
         \ ['jparise/vim-graphql'],
   \ ]

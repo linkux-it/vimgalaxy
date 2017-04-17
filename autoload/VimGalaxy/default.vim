@@ -79,11 +79,12 @@ function! VimGalaxy#default#SetOptions() abort
   autocmd BufNewFile,BufReadPost *.py setl foldmethod=indent nofoldenable
 
   " This to close preview when insert mode leaves
+  autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
   autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
   " Open quickfix when set
-  autocmd QuickFixCmdPost [^l]* cwindow
-  autocmd QuickFixCmdPost l*    lwindow
+  " autocmd QuickFixCmdPost [^l]* cwindow
+  " autocmd QuickFixCmdPost l*    lwindow
 
   " Next three lines are to enable C-Space to autocomplete, omnicomplete
   inoremap <C-Space> <C-x><C-o>

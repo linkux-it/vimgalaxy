@@ -64,13 +64,16 @@ function! VimGalaxy#layers#ui#config() abort
   nnoremap <silent> <leader>uo :Denite -auto-resize outline<cr>
 
   call denite#custom#source('file_rec', 'sorters', ['sorter_sublime'])
-  call denite#custom#source('file_mru', 'sorters', ['sorter_sublime'])
+  call denite#custom#source('file_mru', 'sorters', ['sorter_sublime', 'matcher_project_files'])
   call denite#custom#source('directory_rec', 'sorters', ['sorter_sublime'])
   call denite#custom#source('buffer', 'sorters', ['sorter_sublime'])
   call denite#custom#source('line', 'sorters', ['sorter_sublime'])
   call denite#custom#source('command', 'sorters', ['sorter_sublime'])
   call denite#custom#source('colorscheme', 'sorters', ['sorter_sublime'])
   call denite#custom#source('grep', 'sorters', ['sorter_sublime'])
+
+  call denite#custom#var('file_rec', 'command',
+        \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
 
   call denite#custom#var('grep', 'command', ['ag'])
   call denite#custom#var('grep', 'recursive_opts', [])

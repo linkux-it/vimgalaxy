@@ -127,6 +127,7 @@ Name           | Description
 [vim-fetch] | Make Vim handle line and column numbers in file names with a minimum of fuss.
 [PreserveNoEOL] | Preserve missing EOL at the end of text files. 
 [vim-tmux-navigator] | Seamless navigation between tmux panes and vim splits
+[hardmode] | The philosophy Hard Mode
 
 ##### UI
 
@@ -373,3 +374,4 @@ Name           | Description
 [vim-virtualenv]: https://github.com/jmcantrell/vim-virtualenv
 [neomake-autolint]: https://github.com/https://github.com/dojoteef/neomake-autolint
 [vim-sort-motion]: https://github.com/christoomey/vim-sort-motion
+[hardmode]: https://github.com/wikitopian/hardmode
