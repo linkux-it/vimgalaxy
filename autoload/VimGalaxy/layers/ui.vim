@@ -21,11 +21,14 @@ function! VimGalaxy#layers#ui#plugins() abort
         \ ['milkypostman/vim-togglelist'],
         \ ['majutsushi/tagbar'],
         \ ['hecal3/vim-leader-guide'],
+        \ ['justinmk/vim-sneak'],
         \ ['bagrat/vim-workspace'],
+        \ ['ryanoasis/vim-devicons'],
   \ ]
 endfunction
 
 function! VimGalaxy#layers#ui#config() abort
+  let g:sneak#label = 1
   let g:mundo_prefer_python3 = 1
 
   let g:netrw_list_hide = '^.*\.o$,^.*\.obj$,^.*\.bak$,^.*\.exe$,^.*\.pyc$,^.DS_Store$,^.git/*,^node_modules/*'
@@ -92,7 +95,6 @@ function! VimGalaxy#layers#ui#config() abort
   " Define prefix dictionary
   let g:lmap =  {
         \'T': ['Denite -auto-resize colorscheme', 'Change Theme'],
-        \' ': ['call feedkeys("\<Plug>easymotion-prefix")', 'Easy Motion'],
         \'!': ['call feedkeys(":!")', 'Shell input'],
         \'1': ['call feedkeys("\<Plug>AirlineSelectTab1")', 'Select Window 1'],
         \'2': ['call feedkeys("\<Plug>AirlineSelectTab2")', 'Select Window 2'],

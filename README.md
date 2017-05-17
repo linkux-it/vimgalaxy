@@ -7,6 +7,11 @@ Is a neovim and vim 8 setup like spacemacs and based on spacevim
 
 [![Throughput Graph](https://graphs.waffle.io/linkux-it/vimgalaxy/throughput.svg)](https://waffle.io/linkux-it/vimgalaxy/metrics/throughput)
 
+# Fonts instalations
+
+To install fonts do this https://github.com/ryanoasis/nerd-fonts#option-2-ad-hoc-curl-download
+To enable fonts do this for OSX https://github.com/ryanoasis/nerd-fonts/issues/13#issuecomment-190252936
+
 ### Table of Contents
 - [Introduction](#introduction)
 - [Install](#install)
@@ -152,6 +157,9 @@ Name           | Description
 [vim-togglelist] | Functions to toggle the [Location List] and the [Quickfix List] windows.
 [tagbar] | Vim plugin that displays tags in a window, ordered by scope
 [vim-leader-guide] | is a vim keymap-display loosely inspired by emacs's guide-key.
+[vim-sneak] | Jump to any location specified by two characters.
+[vim-workspace] | VimWorkspace brings the IDE-like tabs into Vim
+[vim-devicons] | VimDevIcons adds filetype glyphs (icons)
 
 ##### Autocomplete
 
@@ -194,17 +202,13 @@ Name           | Description
 [vim-repeat] | Enable repeating supported plugin maps with "."
 [tcomment_vim] | An extensible & universal comment vim-plugin that also handles embedded filetypes
 [searchtasks.vim] | Plugin to search the labels often used as TODO, FIXME and XXX.
-[incsearch-fuzzy.vim] | incremantal fuzzy search extension for [incsearch.vim]
-[incsearch-easymotion.vim] | Integration between [incsearch.vim] and [vim-easymotion]
 [vim-multiple-cursors] | True Sublime Text style multiple selections for Vim
-[incsearch.vim] | Improved incremental searching for Vim
 [vim-asterisk] | *-Improved
 [far.vim] | Find And Replace Vim plugin
 [NrrwRgn] | A Narrow Region Plugin for vim (like Emacs Narrow Region)
 [vim-expand-region] | Vim plugin that allows you to visually select increasingly larger regions of text using the same key combination.
 [tabular] | Vim script for text filtering and alignment
 [emmet-vim] | emmet for vim
-[vim-easymotion] | Vim motions on speed!
 [editorconfig-vim] | EditorConfig plugin for Vim
 [vim-sort-motion] | This plugin provides the ability to sort in Vim using text objects and motions.
 
@@ -332,8 +336,6 @@ Name           | Description
 [vim-repeat]: https://github.com/tpope/vim-repeat
 [tcomment_vim]: https://github.com/tomtom/tcomment_vim
 [searchtasks.vim]: https://github.com/gilsondev/searchtasks.vim
-[incsearch-fuzzy.vim]: https://github.com/haya14busa/incsearch-fuzzy.vim
-[incsearch-easymotion.vim]: https://github.com/haya14busa/incsearch-easymotion.vim
 [vim-multiple-cursors]: https://github.com/terryma/vim-multiple-cursors
 [incsearch.vim]: https://github.com/haya14busa/incsearch.vim
 [vim-asterisk]: https://github.com/haya14busa/vim-asterisk
@@ -342,7 +344,6 @@ Name           | Description
 [vim-expand-region]: https://github.com/terryma/vim-expand-region
 [tabular]: https://github.com/godlygeek/tabular
 [emmet-vim]: https://github.com/mattn/emmet-vim
-[vim-easymotion]: https://github.com/easymotion/vim-easymotion
 [editorconfig-vim]: https://github.com/editorconfig/editorconfig-vim
 [neoformat]: https://github.com/sbdchd/neoformat
 [vim-graphql]: https://github.com/jparise/vim-graphql
@@ -375,3 +376,6 @@ Name           | Description
 [neomake-autolint]: https://github.com/https://github.com/dojoteef/neomake-autolint
 [vim-sort-motion]: https://github.com/christoomey/vim-sort-motion
 [hardmode]: https://github.com/wikitopian/hardmode
+[vim-sneak]: https://github.com/justinmk/vim-sneak
+[vim-workspace]: https://github.com/bagrat/vim-workspace
+[vim-devicons]: https://github.com/ryanoasis/vim-devicons
