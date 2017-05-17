@@ -26,10 +26,6 @@ function! VimGalaxy#default#SetOptions() abort
   " Set to auto read when a file is changed from the outside
   set autoread
 
-  " Shou number and relativenumber
-  set relativenumber
-  set number
-
   set history=10000
   set incsearch
   set hlsearch
@@ -81,6 +77,8 @@ function! VimGalaxy#default#SetOptions() abort
   " This to close preview when insert mode leaves
   autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
   autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+  runtime macros/matchit.vim
 
   " Open quickfix when set
   " autocmd QuickFixCmdPost [^l]* cwindow

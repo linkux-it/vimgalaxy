@@ -21,6 +21,7 @@ function! VimGalaxy#layers#ui#plugins() abort
         \ ['milkypostman/vim-togglelist'],
         \ ['majutsushi/tagbar'],
         \ ['hecal3/vim-leader-guide'],
+        \ ['bagrat/vim-workspace'],
   \ ]
 endfunction
 

@@ -1,9 +1,14 @@
 set laststatus=2  "Force appear the status line "
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tmuxline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#buffer_idx_mode = 1
+" let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tmuxline#enabled = 1
+
+let g:workspace_powerline_separators = 1
+" let g:workspace_tab_icon = "\uf00a"
+" let g:workspace_left_trunc_icon = "\uf0a8"
+" let g:workspace_right_trunc_icon = "\uf0a9"
 
 let g:airline_base16_improved_contrast = 1
 let g:airline_powerline_fonts = 1
