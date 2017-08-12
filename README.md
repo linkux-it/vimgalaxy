@@ -189,6 +189,10 @@ Name           | Description
 [dracula] | A dark theme for Vim
 [nordisk] | A calm, fairly low contrast, dark color scheme
 [vim-monokai] | Monokai color scheme for Vim converted from Textmate theme
+[onedark.vim] | A dark Vim/Neovim color scheme for the GUI and 16/256/true-color terminals
+[Spacegray.vim] | Spacegray is a colorscheme for Vim loosely modeled after the spacegray theme for Xcode.
+[spacemacs-theme.vim] | A theme modelled after nashamri/spacemacs-theme, for Vim and iTerm.
+[vim-material-theme] | Material theme for vim
 
 ##### Edit
 
@@ -379,3 +383,7 @@ Name           | Description
 [vim-sneak]: https://github.com/justinmk/vim-sneak
 [vim-workspace]: https://github.com/bagrat/vim-workspace
 [vim-devicons]: https://github.com/ryanoasis/vim-devicons
+[vim-material-theme]: https://github.com/jdkanani/vim-material-theme
+[spacemacs-theme]: https://github.com/colepeters/spacemacs-theme.vim
+[Spacegray.vim]: https://github.com/ajh17/Spacegray.vim
+[onedark.vim]: https://github.com/joshdick/onedark.vim

@@ -13,7 +13,7 @@ endfunction
 
 function! VimGalaxy#layers#lang#javascript#config() abort
   let g:flow#autoclose = 1
-  let g:tern#filetypes = [
+  let g:deoplete#sources#ternjs#filetypes = [
     \ 'jsx',
     \ 'javascript.jsx',
   \ ]

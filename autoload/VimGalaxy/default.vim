@@ -108,63 +108,12 @@ function! VimGalaxy#default#SetOptions() abort
 
   if !has('nvim')
     set term=screen-256color
+    set shada='1000,f1,<500
   endif
 
   if &compatible
     set nocompatible
   endif
-
-  "    " indent use backspace delete indent, eol use backspace delete line at
-  "    " begining start delete the char you just typed in if you do not use set
-  "    " nocompatible ,you need this
-  "    set backspace=indent,eol,start
-  "
-  "
-  "    " do not break words.
-  "    set linebreak
-  "
-  "    " backup
-  "    set backup
-  "    set undofile
-  "    set undolevels=1000
-  "    let g:data_dir = $HOME . '/.data/'
-  "    let g:backup_dir = g:data_dir . 'backup'
-  "    let g:swap_dir = g:data_dir . 'swap'
-  "    let g:undo_dir = g:data_dir . 'undofile'
-  "    if finddir(g:data_dir) ==# ''
-  "        silent call mkdir(g:data_dir)
-  "    endif
-  "    if finddir(g:backup_dir) ==# ''
-  "        silent call mkdir(g:backup_dir)
-  "    endif
-  "    if finddir(g:swap_dir) ==# ''
-  "        silent call mkdir(g:swap_dir)
-  "    endif
-  "    if finddir(g:undo_dir) ==# ''
-  "        silent call mkdir(g:undo_dir)
-  "    endif
-  "    unlet g:backup_dir
-  "    unlet g:swap_dir
-  "    unlet g:data_dir
-  "    unlet g:undo_dir
-  "    set undodir=$HOME/.data/undofile
-  "    set backupdir=$HOME/.data/backup
-  "    set directory=$HOME/.data/swap
-  "    set nofoldenable                " no fold enable
-  "    set nowritebackup
-  "    set matchtime=0
-  "    set completeopt=menu,menuone,longest " disable preview scratch window,
-    "    set complete=.,w,b,u,t " h: 'complete'
-    "    set pumheight=15 " limit completion menu height
-    "    set scrolloff=7
-    "    set autowrite
-    "    set completeopt=longest,menu
-    "    set wildignorecase
-    "    let g:markdown_fenced_languages = ['vim', 'java', 'bash=sh', 'sh', 'html', 'python']
-    "    set mouse=
-    "    set ttimeout
-    "    set ttimeoutlen=50
-    "    set background=dark
 endfunction
 
 function! VimGalaxy#default#SetPlugins() abort

@@ -23,8 +23,8 @@ function! VimGalaxy#layers#ui#plugins() abort
         \ ['hecal3/vim-leader-guide'],
         \ ['justinmk/vim-sneak'],
         \ ['bagrat/vim-workspace'],
-        \ ['ryanoasis/vim-devicons'],
   \ ]
+        " \ ['ryanoasis/vim-devicons'],
 endfunction
 
 function! VimGalaxy#layers#ui#config() abort

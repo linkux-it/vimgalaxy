@@ -80,6 +80,10 @@
 "   dracula
 "   Nordisk
 "   monokai
+"   onedark
+"   Spacegray
+"   spacemacs-theme
+"   vim-material-theme
 "   https://github.com/daylerees/colour-schemes/tree/master/vim/colors
 " <
 
@@ -89,8 +93,12 @@ function! VimGalaxy#layers#colorscheme#plugins() abort
         \ ['chriskempson/base16-vim'],
         \ ['mhartington/oceanic-next'],
         \ ['daylerees/colour-schemes'],
-        \ ['dracula/vim'],
         \ ['kamwitsta/nordisk'],
+        \ ['dracula/vim'],
         \ ['sickill/vim-monokai'],
+        \ ['joshdick/onedark.vim'],
+        \ ['ajh17/Spacegray.vim'],
+        \ ['colepeters/spacemacs-theme.vim'],
+        \ ['jdkanani/vim-material-theme'],
   \ ]
 endfunction

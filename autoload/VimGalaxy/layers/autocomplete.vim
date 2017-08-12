@@ -29,5 +29,5 @@ function VimGalaxy#layers#autocomplete#config()
   let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
   let g:UltiSnipsSnippetsDir = $HOME."/.config/UltiSnips"
   let g:UltiSnipsSnippetDirectories = ['UltiSnips', $HOME.'/.config/UltiSnips']
-  let g:UltiSnipsEnableSnipMate = 0
+  " let g:UltiSnipsEnableSnipMate = 0
 endfunction

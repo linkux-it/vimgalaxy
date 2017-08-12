@@ -5,6 +5,7 @@ set termguicolors
 "silent! let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 "silent! let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 "silent! let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
 " dark0 + gray
 let g:terminal_color_0 = "#282828"
 let g:terminal_color_8 = "#928374"
@@ -36,6 +37,7 @@ let g:terminal_color_14 = "#8ec07c"
 " light4 + light1
 let g:terminal_color_7 = "#a89984"
 let g:terminal_color_15 = "#ebdbb2"
+
 augroup Terminal
     au!
     au TermOpen * let g:last_terminal_job_id = b:terminal_job_id | IndentLinesDisable

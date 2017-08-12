@@ -45,7 +45,7 @@ let g:vimgalaxy_custom_plugins = []
 
 
 " The colorscheme of VimGalaxy, if colorscheme groups are installed.
-let g:vimgalaxy_colorscheme = 'dracula'
+let g:vimgalaxy_colorscheme = 'monokai'
 
 ""
 " The default colorscheme of VimGalaxy. By default VimGalaxy use desert, if

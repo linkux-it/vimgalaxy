@@ -6,7 +6,7 @@ function! VimGalaxy#layers#web#plugins() abort
         \ ['ap/vim-css-color', { 'on_ft' : ['css','scss','sass','less','styl']}],
         \ ['othree/html5.vim', { 'on_ft' : ['html']}],
         \ ['wavded/vim-stylus', { 'on_ft' : ['styl']}],
-        \ ['digitaltoad/vim-pug', { 'on_ft' : ['jade']}],
+        \ ['digitaltoad/vim-pug', { 'on_ft' : ['pug']}],
         \ ['juvenn/mustache.vim', { 'on_ft' : ['mustache']}],
         \ ['leafgarland/typescript-vim', { 'on_ft' : ['typescript']}],
         \ ['leshill/vim-json', { 'on_ft' : ['javascript','json']}],
