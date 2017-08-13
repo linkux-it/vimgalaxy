@@ -28,7 +28,6 @@ function! VimGalaxy#layers#edit#config() abort
   let g:multi_cursor_prev_key='<C-k>'
   let g:multi_cursor_skip_key='<C-x>'
   let g:multi_cursor_quit_key='<Esc>'
-  let g:user_emmet_settings = {'html':{'quote_char': "'",},}
 
   let g:EditorConfig_exclude_patterns = ['fugitive://.*']
   let g:EditorConfig_exclude_patterns = ['scp://.*']

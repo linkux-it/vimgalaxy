@@ -4,7 +4,6 @@ function! VimGalaxy#layers#lang#javascript#plugins() abort
       \ ['mmalecki/vim-node.js', {'on_ft' : ['javascript']}],
       \ ['carlitux/deoplete-ternjs', { 'on_ft' : ['javascript']}],
       \ ['wokalski/autocomplete-flow', { 'on_ft' : ['javascript']}],
-      \ ['maksimr/vim-jsbeautify', { 'on_ft' : ['javascript']}],
       \ ['othree/javascript-libraries-syntax.vim', { 'on_ft' : ['javascript','coffee','ls','typescript']}],
     \ ]
     return plugins
@@ -17,5 +16,4 @@ function! VimGalaxy#layers#lang#javascript#config() abort
     \ 'jsx',
     \ 'javascript.jsx',
   \ ]
-  nnoremap <leader>jsb :call JsBeautify()<cr>
 endfunction

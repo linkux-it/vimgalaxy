@@ -43,7 +43,6 @@ To enable fonts do this for OSX https://github.com/ryanoasis/nerd-fonts/issues/1
     - [Checkers](#checkers)
     - [Colorscheme](#colorscheme)
     - [Edit](#edit)
-    - [Format](#format)
     - [Git](#git)
     - [GraphQL](#graphql)
     - [Shell](#shell)
@@ -176,8 +175,7 @@ Name           | Description
 
 Name           | Description
 -------------- | ----------------------
-[neomake] | Asynchronous linting and make framework for Neovim/Vim
-[neomake-autolint] | Lint as you type using Neomake
+[ale] | ALE (Asynchronous Lint Engine) is a plugin for providing linting in NeoVim and Vim 8 while you edit your text files.
 
 ##### Colorscheme
 
@@ -215,12 +213,6 @@ Name           | Description
 [emmet-vim] | emmet for vim
 [editorconfig-vim] | EditorConfig plugin for Vim
 [vim-sort-motion] | This plugin provides the ability to sort in Vim using text objects and motions.
-
-##### Format
-
-Name           | Description
--------------- | ----------------------
-[neoformat] | A (Neo)vim plugin for formatting code.
 
 ##### Git
 
@@ -269,7 +261,6 @@ Name           | Description
 [vim-javascript] | Vastly improved Javascript indentation and syntax support in Vim.
 [vim-node.js] | File type detect plugin for vim which detects node.js shebang
 [deoplete-ternjs] | deoplete.nvim source for javascript
-[vim-jsbeautify] | vim plugin which formated javascript files by js-beautify
 [javascript-libraries-syntax.vim] | Syntax for JavaScript libraries
 
 ##### Python
@@ -325,7 +316,7 @@ Name           | Description
 [neco-syntax]: https://github.com/Shougo/neco-syntax
 [auto-pairs]: https://github.com/jiangmiao/auto-pairs
 [deoplete.nvim]: https://github.com/Shougo/deoplete.nvim
-[neomake]: https://github.com/neomake/neomake
+[ale]: https://github.com/w0rp/ale
 [base16-vim]: https://github.com/chriskempson/base16-vim
 [oceanic-next]: https://github.com/mhartington/oceanic-next
 [colour-schemes]: https://github.com/daylerees/colour-schemes
@@ -349,7 +340,6 @@ Name           | Description
 [tabular]: https://github.com/godlygeek/tabular
 [emmet-vim]: https://github.com/mattn/emmet-vim
 [editorconfig-vim]: https://github.com/editorconfig/editorconfig-vim
-[neoformat]: https://github.com/sbdchd/neoformat
 [vim-graphql]: https://github.com/jparise/vim-graphql
 [deol.nvim]: https://github.com/Shougo/deol.nvim
 [agit.vim]: https://github.com/cohama/agit.vim
@@ -373,11 +363,9 @@ Name           | Description
 [vim-javascript]: https://github.com/pangloss/vim-javascript
 [vim-node.js]: https://github.com/mmalecki/vim-node.js
 [deoplete-ternjs]: https://github.com/carlitux/deoplete-ternjs
-[vim-jsbeautify]: https://github.com/maksimr/vim-jsbeautify
 [javascript-libraries-syntax.vim]: https://github.com/othree/javascript-libraries-syntax.vim
 [deoplete-jedi]: https://github.com/zchee/deoplete-jedi
 [vim-virtualenv]: https://github.com/jmcantrell/vim-virtualenv
-[neomake-autolint]: https://github.com/https://github.com/dojoteef/neomake-autolint
 [vim-sort-motion]: https://github.com/christoomey/vim-sort-motion
 [hardmode]: https://github.com/wikitopian/hardmode
 [vim-sneak]: https://github.com/justinmk/vim-sneak
