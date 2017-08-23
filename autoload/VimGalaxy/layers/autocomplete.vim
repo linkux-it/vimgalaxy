@@ -12,7 +12,7 @@
 
 function! VimGalaxy#layers#autocomplete#plugins() abort
   let plugins = [
-        \ ['SirVer/ultisnips', {'merged' : 0}],
+        \ ['SirVer/ultisnips', {'loadconf': 1}],
         \ ['honza/vim-snippets', {'on_event' : 'InsertEnter'}],
         \ ['Shougo/neoinclude.vim', {'on_event': 'InsertEnter'}],
         \ ['Shougo/neco-syntax', {'on_event': 'InsertEnter'}],
@@ -24,9 +24,6 @@ endfunction
 
 
 function VimGalaxy#layers#autocomplete#config()
-  let g:UltiSnipsExpandTrigger = "<tab>"
-  let g:UltiSnipsJumpForwardTrigger = "<c-j>"
-  let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
   let g:UltiSnipsSnippetsDir = $HOME."/.config/UltiSnips"
   let g:UltiSnipsSnippetDirectories = ['UltiSnips', $HOME.'/.config/UltiSnips']
   " let g:UltiSnipsEnableSnipMate = 0

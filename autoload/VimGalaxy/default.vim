@@ -97,7 +97,7 @@ function! VimGalaxy#default#SetOptions() abort
     nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
     nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
     nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
-
+    
     let g:tmux_navigator_save_on_switch = 1
   else
     nnoremap <C-h> <C-w>h

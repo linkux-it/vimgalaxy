@@ -10,6 +10,7 @@ function! VimGalaxy#layers#core#plugins() abort
         \ ['vim-scripts/PreserveNoEOL'],
         \ ['christoomey/vim-tmux-navigator'],
         \ ['wikitopian/hardmode'],
+        \ ['Shougo/context_filetype.vim'],
   \ ] 
   return plugins
 endfunction
