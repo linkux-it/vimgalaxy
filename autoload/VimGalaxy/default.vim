@@ -75,8 +75,7 @@ function! VimGalaxy#default#SetOptions() abort
   autocmd BufNewFile,BufReadPost *.py setl foldmethod=indent nofoldenable
 
   " This to close preview when insert mode leaves
-  autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-  autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
   runtime macros/matchit.vim
 
