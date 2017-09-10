@@ -70,9 +70,16 @@ function! VimGalaxy#default#SetOptions() abort
   endif
 
   " This the default one
-  set foldmethod=syntax nofoldenable
-  autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
-  autocmd BufNewFile,BufReadPost *.py setl foldmethod=indent nofoldenable
+  set foldmethod=syntax
+  set foldclose=all
+  set foldcolumn=1
+  set nofoldenable
+
+  autocmd BufNewFile,BufReadPost *.js setl foldmethod=syntax
+  autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent
+  autocmd BufNewFile,BufReadPost *.py setl foldmethod=indent
+
+  set viewoptions=cursor,folds,slash,unix
 
   " This to close preview when insert mode leaves
   autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif

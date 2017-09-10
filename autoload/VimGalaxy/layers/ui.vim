@@ -22,9 +22,10 @@ function! VimGalaxy#layers#ui#plugins() abort
         \ ['hecal3/vim-leader-guide'],
         \ ['justinmk/vim-sneak'],
         \ ['bagrat/vim-workspace'],
+        \ ['kopischke/vim-stay'],
+        \ ['majutsushi/tagbar'],
   \ ]
         " \ ['ryanoasis/vim-devicons'],
-        " \ ['majutsushi/tagbar'],
 endfunction
 
 function! VimGalaxy#layers#ui#config() abort
