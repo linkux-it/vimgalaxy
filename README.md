@@ -155,6 +155,7 @@ Name           | Description
 [vim-relativity] | Toggle relative line numbers with ease.
 [vim-togglelist] | Functions to toggle the [Location List] and the [Quickfix List] windows.
 [tagbar] | Vim plugin that displays tags in a window, ordered by scope
+[stay] | vim-stay adds automated view session creation and restoration whenever editing a buffer, across Vim sessions and window life cycles
 [vim-leader-guide] | is a vim keymap-display loosely inspired by emacs's guide-key.
 [vim-sneak] | Jump to any location specified by two characters.
 [vim-workspace] | VimWorkspace brings the IDE-like tabs into Vim
@@ -300,6 +301,7 @@ Name           | Description
 [vim-relativity]: https://github.com/kennykaye/vim-relativity
 [vim-togglelist]: https://github.com/milkypostman/vim-togglelist
 [tagbar]: https://github.com/majutsushi/tagbar
+[stay]: https://github.com/kopischke/vim-stay
 [vim-leader-guide]: https://github.com/hecal3/vim-leader-guide
 [vim-vimlint]: https://github.com/syngan/vim-vimlint
 [vim-vimlparser]: https://github.com/ynkdir/vim-vimlparser
