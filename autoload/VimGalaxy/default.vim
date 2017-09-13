@@ -71,8 +71,7 @@ function! VimGalaxy#default#SetOptions() abort
 
   " This the default one
   set foldmethod=syntax
-  set foldclose=all
-  set foldcolumn=1
+  " set foldclose=all
   set nofoldenable
 
   autocmd BufNewFile,BufReadPost *.js setl foldmethod=syntax
@@ -156,10 +155,10 @@ function! VimGalaxy#default#SetMappings() abort
   nnoremap <leader>td  :tabclose<CR>
 
   " buffer navigation
-  nnoremap <leader>bh  :bfirst<CR>
-  nnoremap <leader>bk  :bnext<CR>
-  nnoremap <leader>bj  :bprev<CR>
-  nnoremap <leader>bl  :blast<CR>
+  nnoremap <leader>bH  :bfirst<CR>
+  nnoremap <leader>bj  :bnext<CR>
+  nnoremap <leader>bk  :bprev<CR>
+  nnoremap <leader>bL  :blast<CR>
   nnoremap <leader>bn  :enew<CR>
   nnoremap <leader>bm  :bm<Space>
   nnoremap <leader>bd  :BD<CR>

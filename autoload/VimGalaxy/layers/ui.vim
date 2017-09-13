@@ -30,6 +30,11 @@ endfunction
 
 function! VimGalaxy#layers#ui#config() abort
   let g:sneak#label = 1
+  map f <Plug>Sneak_f
+  map F <Plug>Sneak_F
+  map t <Plug>Sneak_t
+  map T <Plug>Sneak_T
+
   let g:mundo_prefer_python3 = 1
 
   let g:netrw_list_hide = '^.*\.o$,^.*\.obj$,^.*\.bak$,^.*\.exe$,^.*\.pyc$,^.DS_Store$,^.git/*,^node_modules/*'
