@@ -16,5 +16,5 @@ nmap <silent><leader>lj <Plug>(ale_next_wrap)
 nmap <silent><leader>lk <Plug>(ale_previous_wrap)
 nmap <silent><leader>lh <Plug>(ale_first)
 nmap <silent><leader>ll <Plug>(ale_last)
-nmap <leader>lf :ALEFix
-nmap <leader>ls :ALESuggest
+nmap <leader>lf :ALEFix<CR>
+nmap <leader>ls :ALEFixSuggest<CR>
