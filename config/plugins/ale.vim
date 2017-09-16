@@ -5,7 +5,7 @@ let g:ale_fix_on_save = 1
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
 let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es6'
-let g:ale_lint_delay = 5000 " Wait for 5 seg before calling linters.
+let g:ale_lint_delay = 2000 " Wait for 5 seg before calling linters.
 
 let g:ale_fixers = {
   \ 'javascript': ['eslint'],

@@ -136,6 +136,7 @@ function! VimGalaxy#default#SetPlugins() abort
 
   call add(g:vimgalaxy_plugin_groups, 'lang#javascript')
   call add(g:vimgalaxy_plugin_groups, 'lang#python')
+  call add(g:vimgalaxy_plugin_groups, 'lang#lua')
 endfunction
 
 

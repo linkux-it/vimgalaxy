@@ -23,12 +23,12 @@ To enable fonts do this for OSX https://github.com/ryanoasis/nerd-fonts/issues/1
     - [Language specific mode](#language-specific-mode)
         - [javascript support](#javascript)
         - [python support](#python)
+        - [lua support](#lua)
         - c/c++ support
         - go support
         - rust support
         - php support
         - perl support
-        - lua support
     - [Neovim centric - Dark powered mode](#neovim-centric---dark-powered-mode-of-spacevim)
     - [Modular configuration](#modular-configuration)
     - Lazy-load 90% of plugins with [dein.vim]
@@ -49,6 +49,7 @@ To enable fonts do this for OSX https://github.com/ryanoasis/nerd-fonts/issues/1
     - [Web](#web)
     - [Javascript](#javascript)
     - [Python](#python)
+    - [Lua](#lua)
 - [Custom configuration](#custom-configuration)
 - [Credits & Thanks](#credits--thanks)
 
@@ -271,6 +272,14 @@ Name           | Description
 [deoplete-jedi] | deoplete.nvim source for Python
 [vim-virtualenv] | Vim plugin for working with python virtualenvs
 
+##### Lua
+
+Name           | Description
+-------------- | ----------------------
+[vim-lua] | Improved Lua 5.3 syntax and indentation support for Vim
+[lua-support] | Edit Lua scripts in Vim/gVim. Insert code snippets, run, compile, and check the code and look up help.
+
+
 #### Credits & Thanks
 - [![GitHub contributors](https://img.shields.io/github/contributors/linkux-it/VimGalaxy.svg)](https://github.com/linkux-it/VimGalaxy/graphs/contributors)
 - [vimdoc](https://github.com/google/vimdoc) generate doc file for VimGalaxy
@@ -377,3 +386,5 @@ Name           | Description
 [spacemacs-theme]: https://github.com/colepeters/spacemacs-theme.vim
 [Spacegray.vim]: https://github.com/ajh17/Spacegray.vim
 [onedark.vim]: https://github.com/joshdick/onedark.vim
+[vim-lua]: https://github.com/tbastos/vim-lua
+[lua-support]: https://github.com/WolfgangMehner/lua-support
