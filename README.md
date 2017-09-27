@@ -188,6 +188,7 @@ Name           | Description
 [colour-schemes] | Colour schemes for a variety of editors created by Dayle Rees. 
 [dracula] | A dark theme for Vim
 [nordisk] | A calm, fairly low contrast, dark color scheme
+[iceberg] | Iceberg is a dark blue color scheme for Vim. It brings a cool-headed perspective for your happy coding!
 [vim-monokai] | Monokai color scheme for Vim converted from Textmate theme
 [onedark.vim] | A dark Vim/Neovim color scheme for the GUI and 16/256/true-color terminals
 [Spacegray.vim] | Spacegray is a colorscheme for Vim loosely modeled after the spacegray theme for Xcode.
@@ -332,7 +333,8 @@ Name           | Description
 [oceanic-next]: https://github.com/mhartington/oceanic-next
 [colour-schemes]: https://github.com/daylerees/colour-schemes
 [dracula]: https://github.com/dracula/vim
-[nordisk]: https://github.com/kamwitsta/nordisk
+[nordisk]: https://github.com/arcticicestudio/nord-vim
+[iceberg]: https://github.com/cocopon/iceberg.vim
 [vim-monokai]: https://github.com/sickill/vim-monokai
 [vim-surround]: https://github.com/tpope/vim-surround
 [vim-unimpaired]: https://github.com/tpope/vim-unimpaired

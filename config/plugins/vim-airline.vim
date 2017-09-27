@@ -12,7 +12,6 @@ let g:workspace_right_trunc_icon = "\uf0a9"
 
 let g:airline_base16_improved_contrast = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'base16'
 
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2

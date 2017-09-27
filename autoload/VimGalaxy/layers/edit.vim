@@ -24,10 +24,7 @@ endfunction
 
 
 function! VimGalaxy#layers#edit#config() abort
-  let g:multi_cursor_next_key='<C-j>'
-  let g:multi_cursor_prev_key='<C-k>'
-  let g:multi_cursor_skip_key='<C-x>'
-  let g:multi_cursor_quit_key='<Esc>'
+	let g:multi_cursor_use_default_mapping = 0
 
   let g:EditorConfig_exclude_patterns = ['fugitive://.*']
   let g:EditorConfig_exclude_patterns = ['scp://.*']
