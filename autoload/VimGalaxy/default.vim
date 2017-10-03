@@ -1,6 +1,10 @@
 scriptencoding utf-8
 
 function! VimGalaxy#default#SetOptions() abort
+  set title
+  set titlestring=%{getpid().':'.getcwd()}
+  set titleold=?
+
   " The encoding displayed in terminal/gui
   set encoding=utf-8
 

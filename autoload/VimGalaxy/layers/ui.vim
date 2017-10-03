@@ -24,6 +24,7 @@ function! VimGalaxy#layers#ui#plugins() abort
         \ ['bagrat/vim-workspace'],
         \ ['kopischke/vim-stay'],
         \ ['majutsushi/tagbar'],
+        \ ['sotte/presenting.vim'],
   \ ]
         " \ ['ryanoasis/vim-devicons'],
 endfunction

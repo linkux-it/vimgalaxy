@@ -139,6 +139,7 @@ Name           | Description
 Name           | Description
 -------------- | ----------------------
 [vim-startify] | Vim Startify
+[presenting] | is a vim plugin that turns your markup into presentable slides (in vim).
 [denite.nvim] | Dark powered asynchronous unite all interfaces for Neovim/Vim8
 [vim-searchindex] | Display number of search matches & index of a current match
 [indentLine] | A vim plugin to display the indention levels with thin vertical lines
@@ -390,3 +391,4 @@ Name           | Description
 [onedark.vim]: https://github.com/joshdick/onedark.vim
 [vim-lua]: https://github.com/tbastos/vim-lua
 [lua-support]: https://github.com/WolfgangMehner/lua-support
+[presenting]: https://github.com/sotte/presenting.vim
