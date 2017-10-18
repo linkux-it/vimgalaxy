@@ -11,6 +11,7 @@ function! VimGalaxy#layers#lang#python#plugins() abort
   let plugins = [
         \ ['zchee/deoplete-jedi', { 'on_ft' : 'python'}],
         \ ['jmcantrell/vim-virtualenv', { 'on_ft' : 'python'}],
+        \ ['tweekmonster/django-plus.vim', { 'on_ft' : 'python'}],
   \ ]
 
   return plugins

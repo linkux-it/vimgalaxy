@@ -9,6 +9,10 @@ let g:ale_lint_delay = 600 " Wait for 5 seg before calling linters.
 
 let g:ale_fixers = {
   \ 'javascript': ['eslint'],
+  \ 'scss': ['prettier'],
+  \ 'css': ['prettier'],
+  \ 'json': ['prettier'],
+  \ 'graphql': ['prettier'],
   \ 'python': ['autopep8']
 \ }
 

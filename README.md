@@ -273,6 +273,7 @@ Name           | Description
 -------------- | ----------------------
 [deoplete-jedi] | deoplete.nvim source for Python
 [vim-virtualenv] | Vim plugin for working with python virtualenvs
+[django-plus.vim] | Improvements to the handling of Django related files in Vim, some of which are based on Steve Losh's htmldjango scripts.
 
 ##### Lua
 
@@ -392,3 +393,4 @@ Name           | Description
 [vim-lua]: https://github.com/tbastos/vim-lua
 [lua-support]: https://github.com/WolfgangMehner/lua-support
 [presenting]: https://github.com/sotte/presenting.vim
+[django-plus.vim]: https://github.com/tweekmonster/django-plus.vim

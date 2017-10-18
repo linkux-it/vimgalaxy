@@ -26,10 +26,10 @@ function! VimGalaxy#layers#git#config() abort
           \'name' : 'Git Menu',
           \'s' : ['Gina status', 'Git Status'],
           \'d' : ['Gina diff', 'Git Diff'],
-          \'c' : ['Gina commit', 'Git Commit'],
+          \'c' : ['Gina!! commit', 'Git Commit'],
           \'b' : ['Gina blame', 'Git Blame'],
-          \'p' : ['Gina push', 'Git Push'],
-          \'u' : ['Gina pull', 'Git Pull'],
+          \'p' : ['Gina!! push', 'Git Push'],
+          \'u' : ['Gina!! pull', 'Git Pull'],
           \'v' : ['GV', 'Git Visual'],
     \}
   endif
