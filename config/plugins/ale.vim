@@ -1,3 +1,6 @@
+" let g:ale_lint_on_text_changed = 'normal'
+let g:airline_section_error = '%{ALEGetStatusLine()}'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_sign_column_always = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_open_list = 1

@@ -57,8 +57,8 @@ function! VimGalaxy#default#SetOptions() abort
   " show wildmenu
   set wildmenu
 
-  " Set ag as default grep
-  set grepprg=ag\ --vimgrep\ $*
+  " Set ripgrep as default grep
+  set grepprg=rg\ --vimgrep\ $*
   set grepformat=%f:%l:%c:%m
 
   " enable all Python syntax highlighting features
