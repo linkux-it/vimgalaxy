@@ -84,6 +84,7 @@
 "   Spacegray
 "   spacemacs-theme
 "   vim-material-theme
+"   colibri
 "   https://github.com/daylerees/colour-schemes/tree/master/vim/colors
 " <
 
@@ -91,6 +92,7 @@
 function! VimGalaxy#layers#colorscheme#plugins() abort
   return [
         \ ['chriskempson/base16-vim'],
+        \ ['archSeer/colibri.vim'],
         \ ['mhartington/oceanic-next'],
         \ ['daylerees/colour-schemes'],
         \ ['arcticicestudio/nord-vim'],

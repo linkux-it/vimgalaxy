@@ -6,4 +6,4 @@ let g:deoplete#sources#ternjs#types = 1
 let g:deoplete#sources#ternjs#docs = 1
 
 call deoplete#custom#set('_', 'sorters', ['sorter_word'])
-call deoplete#custom#set('ultisnips', 'rank', 1000)
+call deoplete#custom#set('neosnippet', 'rank', 1000)

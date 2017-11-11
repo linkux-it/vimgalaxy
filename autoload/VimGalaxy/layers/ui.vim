@@ -83,7 +83,7 @@ function! VimGalaxy#layers#ui#config() abort
   call denite#custom#source('colorscheme', 'sorters', ['sorter_sublime'])
   call denite#custom#source('grep', 'sorters', ['sorter_sublime'])
 
-  call denite#custom#var('file_rec', 'command', ['rg', '--files', '--glob', '!.git', ''])
+  call denite#custom#var('file_rec', 'command', ['rg', '--files', '--glob', '!.git'])
 
   call denite#custom#var('grep', 'command', ['rg'])
   call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--no-heading'])

@@ -167,7 +167,8 @@ Name           | Description
 
 Name           | Description
 -------------- | ----------------------
-[ultisnips] | The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
+[neosnippet] | The Neosnippet plug-In adds snippet support to Vim.
+[neosnippet-snippets] | The Neosnippet default snippets
 [vim-snippets] | Default snippets (Previously snipmate-snippets)
 [neoinclude.vim] | Include completion framework for neocomplete/deoplete
 [neco-syntax] | Syntax source for neocomplete/deoplete
@@ -185,6 +186,7 @@ Name           | Description
 Name           | Description
 -------------- | ----------------------
 [base16-vim] | Base16 for Vim
+[colibri] | A subtle colorscheme for Vim
 [oceanic-next] | Oceanic Next theme for neovim
 [colour-schemes] | Colour schemes for a variety of editors created by Dayle Rees. 
 [dracula] | A dark theme for Vim
@@ -324,7 +326,8 @@ Name           | Description
 [vim-fetch]: https://github.com/kopischke/vim-fetch
 [PreserveNoEOL]: https://github.com/vim-scripts/PreserveNoEOL
 [vim-tmux-navigator]: https://github.com/christoomey/vim-tmux-navigator
-[ultisnips]: https://github.com/SirVer/ultisnips
+[neosnippet]: https://github.com/Shougo/neosnippet.vim
+[neosnippet-snippets]: https://github.com/Shougo/neosnippet-snippets
 [vim-snippets]: https://github.com/honza/vim-snippets
 [neoinclude.vim]: https://github.com/Shougo/neoinclude.vim
 [neco-syntax]: https://github.com/Shougo/neco-syntax
@@ -332,6 +335,7 @@ Name           | Description
 [deoplete.nvim]: https://github.com/Shougo/deoplete.nvim
 [ale]: https://github.com/w0rp/ale
 [base16-vim]: https://github.com/chriskempson/base16-vim
+[colibri]: https://github.com/archSeer/colibri.vim
 [oceanic-next]: https://github.com/mhartington/oceanic-next
 [colour-schemes]: https://github.com/daylerees/colour-schemes
 [dracula]: https://github.com/dracula/vim
@@ -347,7 +351,6 @@ Name           | Description
 [tcomment_vim]: https://github.com/tomtom/tcomment_vim
 [searchtasks.vim]: https://github.com/gilsondev/searchtasks.vim
 [vim-multiple-cursors]: https://github.com/terryma/vim-multiple-cursors
-[incsearch.vim]: https://github.com/haya14busa/incsearch.vim
 [vim-asterisk]: https://github.com/haya14busa/vim-asterisk
 [far.vim]: https://github.com/brooth/far.vim
 [NrrwRgn]: https://github.com/chrisbra/NrrwRgn

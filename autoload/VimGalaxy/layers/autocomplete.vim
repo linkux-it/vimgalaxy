@@ -7,12 +7,13 @@
 " @subsection snippet
 " VimGalaxy use ultisnips as snippet engine, and the snippets
 " is `honza/vim-snippets`. for more information, please read
-" |ultisnips|.
+" |neosnippet|.
 
 
 function! VimGalaxy#layers#autocomplete#plugins() abort
   let plugins = [
-        \ ['SirVer/ultisnips', {'loadconf': 1}],
+        \ ['Shougo/neosnippet'],
+        \ ['Shougo/neosnippet-snippets'],
         \ ['honza/vim-snippets', {'on_event' : 'InsertEnter'}],
         \ ['Shougo/neoinclude.vim', {'on_event': 'InsertEnter'}],
         \ ['Shougo/neco-syntax', {'on_event': 'InsertEnter'}],
@@ -24,7 +25,17 @@ endfunction
 
 
 function VimGalaxy#layers#autocomplete#config()
-  let g:UltiSnipsSnippetsDir = $HOME."/.config/UltiSnips"
-  let g:UltiSnipsSnippetDirectories = ['UltiSnips', $HOME.'/.config/UltiSnips']
-  " let g:UltiSnipsEnableSnipMate = 0
+
+  " Plugin key-mappings.
+  " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+  imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+  " For conceal markers.
+  if has('conceal')
+    set conceallevel=2 concealcursor=niv
+  endif
+  " Enable snipMate compatibility feature.
+  let g:neosnippet#enable_snipmate_compatibility = 1
 endfunction

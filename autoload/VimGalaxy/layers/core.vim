@@ -25,7 +25,7 @@ function! VimGalaxy#layers#core#config() abort
   let g:neotags_ctags_args = []
   let g:neotags_highlight = 0
 
-  autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+  " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
   nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 endfunction
 
