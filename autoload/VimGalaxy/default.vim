@@ -54,6 +54,12 @@ function! VimGalaxy#default#SetOptions() abort
   set t_vb=
   set tm=500
 
+  set undofile
+  set undodir=~/.cache/undovim
+  augroup vimrc
+    autocmd BufWritePre /tmp/* setlocal noundofile
+  augroup END
+
   " show wildmenu
   set wildmenu
 

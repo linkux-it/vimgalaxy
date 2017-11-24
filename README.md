@@ -133,6 +133,11 @@ Name           | Description
 [PreserveNoEOL] | Preserve missing EOL at the end of text files. 
 [vim-tmux-navigator] | Seamless navigation between tmux panes and vim splits
 [hardmode] | The philosophy Hard Mode
+[dispatch] | Leverage the power of Vim's compiler plugins without being bound by synchronicity.
+[dispatch-neovim] | Add support for neovim's terminal emulator and job control to [dispatch].
+[projectionist] | Projectionist provides granular project configuration using "projections".
+[vim-test] | A Vim wrapper for running tests on different granularities.
+[vim-grepper] | Use your favorite grep tool to start an asynchronous search.
 
 ##### UI
 
@@ -386,6 +391,11 @@ Name           | Description
 [vim-virtualenv]: https://github.com/jmcantrell/vim-virtualenv
 [vim-sort-motion]: https://github.com/christoomey/vim-sort-motion
 [hardmode]: https://github.com/wikitopian/hardmode
+[projectionist]: https://github.com/tpope/vim-projectionist
+[dispatch]: https://github.com/tpope/vim-dispatch
+[dispatch-neovim]: https://github.com/radenling/vim-dispatch-neovim
+[vim-test]: https://github.com/janko-m/vim-test
+[vim-grepper]: https://github.com/mhinz/vim-grepper
 [vim-sneak]: https://github.com/justinmk/vim-sneak
 [vim-workspace]: https://github.com/bagrat/vim-workspace
 [vim-devicons]: https://github.com/ryanoasis/vim-devicons

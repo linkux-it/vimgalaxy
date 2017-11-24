@@ -53,11 +53,13 @@ augroup END
 " tmux hack to get working on neovim
 nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
 
-tnoremap <Esc> <C-\><C-n>
 tnoremap <C-[> <C-\><C-n>
+tnoremap <C-v><Esc> <Esc>
 
 tnoremap <C-h> <C-\><C-n><C-w>h
 tnoremap <C-j> <C-\><C-n><C-w>j
 tnoremap <C-k> <C-\><C-n><C-w>k
 tnoremap <C-l> <C-\><C-n><C-w>l
 
+highlight! link TermCursor Cursor
+highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
