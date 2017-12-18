@@ -272,6 +272,7 @@ Name           | Description
 [vim-javascript] | Vastly improved Javascript indentation and syntax support in Vim.
 [vim-node.js] | File type detect plugin for vim which detects node.js shebang
 [deoplete-ternjs] | deoplete.nvim source for javascript
+[deoplete-flow] | deoplete.nvim source for flowtype
 [javascript-libraries-syntax.vim] | Syntax for JavaScript libraries
 
 ##### Python
@@ -407,3 +408,4 @@ Name           | Description
 [lua-support]: https://github.com/WolfgangMehner/lua-support
 [presenting]: https://github.com/sotte/presenting.vim
 [django-plus.vim]: https://github.com/tweekmonster/django-plus.vim
+[deoplete-flow]: https://github.com/carlitux/deoplete-flow
