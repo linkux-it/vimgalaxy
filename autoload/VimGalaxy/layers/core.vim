@@ -5,7 +5,7 @@ function! VimGalaxy#layers#core#plugins() abort
         \ ['tpope/vim-scriptease', { 'on_ft' : 'vim'}],
         \ ['lervag/vimtex', { 'on_ft' : 'tex'}],
         \ ['embear/vim-localvimrc'],
-        \ ['c0r73x/neotags.nvim'],
+        \ ['ludovicchabant/vim-gutentags'],
         \ ['kopischke/vim-fetch'],
         \ ['vim-scripts/PreserveNoEOL'],
         \ ['christoomey/vim-tmux-navigator'],
@@ -25,10 +25,8 @@ function! VimGalaxy#layers#core#config() abort
   let g:localvimrc_persistent = 2
 
   set tags=./.tags
-  let g:neotags_enabled = 1
-  let g:neotags_file = ".tags"
-  let g:neotags_ctags_args = []
-  let g:neotags_highlight = 0
+  let g:gutentags_ctags_tagfile='./.tags'
+  let g:gutentags_file_list_command = 'rg --files'
 
   " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
   nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>

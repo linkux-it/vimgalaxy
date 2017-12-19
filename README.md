@@ -128,7 +128,7 @@ Name           | Description
 [vim-scriptease] | Vim plugin for making Vim plugins
 [vimtex] | A modern vim plugin for editing LaTeX files.
 [vim-localvimrc] | This plugin searches for local vimrc files in the file system tree of the currently opened file.
-[neotags.nvim] | A neovim plugin that generates and highlight ctags similar to easytags.
+[gutentags] | Gutentags is a plugin that takes care of the much needed management of tags files in Vim
 [vim-fetch] | Make Vim handle line and column numbers in file names with a minimum of fuss.
 [PreserveNoEOL] | Preserve missing EOL at the end of text files. 
 [vim-tmux-navigator] | Seamless navigation between tmux panes and vim splits
@@ -328,7 +328,7 @@ Name           | Description
 [vim-scriptease]: https://github.com/tpope/vim-scriptease
 [vimtex]: https://github.com/lervag/vimtex
 [vim-localvimrc]: https://github.com/embear/vim-localvimrc
-[neotags.nvim]: https://github.com/c0r73x/neotags.nvim
+[gutentags]: https://github.com/ludovicchabant/vim-gutentags<Paste>
 [vim-fetch]: https://github.com/kopischke/vim-fetch
 [PreserveNoEOL]: https://github.com/vim-scripts/PreserveNoEOL
 [vim-tmux-navigator]: https://github.com/christoomey/vim-tmux-navigator
