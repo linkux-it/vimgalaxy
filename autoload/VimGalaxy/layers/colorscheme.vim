@@ -103,5 +103,6 @@ function! VimGalaxy#layers#colorscheme#plugins() abort
         \ ['ajh17/Spacegray.vim'],
         \ ['colepeters/spacemacs-theme.vim'],
         \ ['jdkanani/vim-material-theme'],
+        \ ['trevordmiller/nova-vim'],
   \ ]
 endfunction

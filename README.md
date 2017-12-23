@@ -197,6 +197,7 @@ Name           | Description
 [dracula] | A dark theme for Vim
 [nordisk] | A calm, fairly low contrast, dark color scheme
 [iceberg] | Iceberg is a dark blue color scheme for Vim. It brings a cool-headed perspective for your happy coding!
+[nova] | Nova color scheme plugin for Vim https://trevordmiller.com/projects/nova
 [vim-monokai] | Monokai color scheme for Vim converted from Textmate theme
 [onedark.vim] | A dark Vim/Neovim color scheme for the GUI and 16/256/true-color terminals
 [Spacegray.vim] | Spacegray is a colorscheme for Vim loosely modeled after the spacegray theme for Xcode.
@@ -409,3 +410,4 @@ Name           | Description
 [presenting]: https://github.com/sotte/presenting.vim
 [django-plus.vim]: https://github.com/tweekmonster/django-plus.vim
 [deoplete-flow]: https://github.com/carlitux/deoplete-flow
+[nova]: https://github.com/trevordmiller/nova-vim
