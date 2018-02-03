@@ -16,7 +16,7 @@ function! VimGalaxy#layers#core#plugins() abort
         \ ['radenling/vim-dispatch-neovim'],
         \ ['janko-m/vim-test'],
         \ ['mhinz/vim-grepper'],
-  \ ] 
+  \ ]
   return plugins
 endfunction
 
@@ -27,6 +27,12 @@ function! VimGalaxy#layers#core#config() abort
   set tags=./.tags
   let g:gutentags_ctags_tagfile='./.tags'
   let g:gutentags_file_list_command = 'rg --files'
+
+  let g:test#strategy = {
+    \ 'nearest': 'neovim',
+    \ 'file':    'dispatch',
+    \ 'suite':   'basic',
+  \}
 
   " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
   nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
